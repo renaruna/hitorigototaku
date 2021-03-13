@@ -7,15 +7,18 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script type="text/javascript">
+      function gate() {
+         var UserInput = prompt("パスワードを入力してください:","");
+         location.href = UserInput + ".html";
+      }
+   </script>
+
   </head>
   <body>
    
     <div class="main">
-      <div class="contents">
-        <p>パスワードを入れてください。</p>
-        <input class="passward">
-        <button class="login" type="button" onclick="location.href='home.html'">ログイン</button>
-      </div>
+      <input type="button" value="パスワードを入力して秘密のページへアクセスする" onclick="gate();">
     </div>
 
   </body>
