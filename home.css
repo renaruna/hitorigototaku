@@ -1,5 +1,6 @@
 * {
     background-color: #fffff0;
+    box-sizing: border-box;
     color: #888;
 }
 
@@ -106,6 +107,7 @@ header {
 
 .items {
     max-width: 1170px;
+    width: 100%;
     padding: 0 250px;
     font-size: 18px;
 }
@@ -116,16 +118,18 @@ header {
 
 .item-left {
     display: inline-block;
-    width: 150px;
+    width: 170px;
     line-height: 40px;
     vertical-align: top;
+    text-align: left;
 }
 
 .item-right {
     display: inline-block;
     padding-left: 50px;
     line-height: 40px;
-    vertical-align: top;
+    vertical-align: center;
+    text-align: left;
 }
 
 .npc {
@@ -136,12 +140,35 @@ header {
 .top {
     padding: 100px 100px 0 100px;
     margin-top: 50px;
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: #F6F6E8 solid 12px;
 }
 
 .title {
-    text-align: center;
-    padding-bottom: 25px;
     font-size: 50px;
-    border-bottom: #999 solid 2px;
     color: #1e90ff;
+}
+
+.top p {
+    font-size: 16px;
+}
+
+.picture {
+    display: inline-block;
+    width: 20%;
+}
+
+.status {
+    line-height: 20px;
+}
+
+.bottom {
+    margin-top: 110px;
+}
+
+.gallery {
+    max-width: 1170px;
+    width: 100%;
+    margin: 20px auto;
 }
