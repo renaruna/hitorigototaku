@@ -3,19 +3,30 @@
     background-color: #fffff0;
 }
 
-.main {
+
+
+.main-btn {
+    display: block;
+    width: 360px;
+    margin: 200px auto;
     text-align: center;
     border-radius: 4px;
     border-width: 1px;
+    height: 40px;
+    background-color: aliceblue;
 }
 
-.passward {
-    background-color: white;
-}
 
 .login {
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: cornflowerblue;
+    font-family:  "游明朝","游明朝体";;
+    font-size: 20px;
     display: block;
-    margin: 10px auto;
-    background-color: #999;
-    color: white;
+    margin: 200px auto;
+    background-color: aliceblue;
+    color: #333;
+    height: 100px;
+    width: 200px;
 }
