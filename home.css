@@ -5,12 +5,14 @@
 }
 
 a {
-    text-decoration: none;
+
+    color: #888;
 }
 
 body {
     font-family: "游明朝","游明朝体";
 }
+
 
 .index li {
     list-style: none;
@@ -25,7 +27,7 @@ body {
 }
 
 header {
-    height: 80px;
+    height: 240px;
     width: 100%;
     top: 0;
 }
@@ -39,24 +41,52 @@ header {
     padding: -100px;
 }
 
+/*　今はもうない↓　*/
 .header-right {
     float: right;
 }
 
-.header-right a {
+.rink-text {
     color: #666;
     padding: 0 30px;
     display: inline-block;
     line-height: 80px;
 }
 
-.header-right a:hover {
+.rink-text:hover {
     background-color: #999;
     color: white;
 }
+/*　今はもうない↑　*/
+
+
+
+.home-index {
+    background-color: #999;
+    opacity: 0.7;
+    padding: 80px 40px 80px 20px;
+    z-index: 99;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: -220px;
+    width: 220px;
+    font-size: 20px;
+}
+
+.home-index a {
+    color: white;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
 
 .menu-icon {
-    display: none;
+    font-size: 40px;
+    float:right;
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }
 
 .topper {
@@ -112,7 +142,7 @@ header {
     font-size: 18px;
 }
 
-.item {
+.chara-item {
     padding-top: 30px;
 }
 
@@ -154,10 +184,6 @@ header {
     font-size: 16px;
 }
 
-.picture {
-    display: inline-block;
-    width: 20%;
-}
 
 .status {
     line-height: 20px;
@@ -167,8 +193,38 @@ header {
     margin-top: 110px;
 }
 
-.gallery {
-    max-width: 1170px;
-    width: 100%;
-    margin: 20px auto;
+
+/*--------- ここからstamp --------*/
+.stamps-section {
+    text-align: center;
+    padding: 60px 0;
 }
+  
+
+.stamp-box {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+  
+.stamp-image {
+    width: 200px;
+    height: 200px;
+    margin: auto 0;
+    padding: 0px;
+}
+  
+#stamp-carousel img {
+    display: inline-block;
+}
+  
+#stamp-carousel li {
+    background-color: #869791;
+}
+
+.carousel-indicators {
+    z-index: 5;
+}
+ 
+  /*-------  ここまでstamp  --------*/
+
