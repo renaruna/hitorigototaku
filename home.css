@@ -5,8 +5,11 @@
 }
 
 a {
-
     color: #888;
+}
+
+a:hover {
+    color: #F0F0FF;
 }
 
 body {
