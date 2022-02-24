@@ -2,11 +2,16 @@ $(function() {
     //menu右から表示
     var $home = $('.home-index');
     var h = $(window).height();
-
-    $('.menu').click(function() {
-        $home.animate({'marginRight':'380px'},500);
-        $home.css("height",h);
-    });
+    
+    $('.menu').hover(
+        function(){
+            $home.animate({'marginRight':'380px'},500);
+            $home.css("height",h);
+        },
+        function () {
+          $home.animate({'marginRight':'0'},500);
+        }
+    );
     
     //スライダー
     function toggleChangeBtn() {
