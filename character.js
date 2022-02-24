@@ -4,7 +4,7 @@ $(function() {
 
     $('.menu').hover(
         function(){
-            $home.animate({'marginRight':'200px'},500);
+            $home.animate({'marginRight':'380px'},500);
             $home.css("height",h);
         },
         function () {
