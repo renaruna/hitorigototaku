@@ -100,7 +100,7 @@ header {
 /* メニュー */
 
 .topper {
-    padding: 50px 100px 100px 100px;
+    padding: 25px 100px;
 }
 
 .footer-logo {
@@ -132,6 +132,10 @@ header {
     color: #555;
     padding-bottom: 20px;
     font-size: 18px;
+}
+
+.list a:hover {
+    color: #B0B0FF;
 }
 
 .list h2 {
