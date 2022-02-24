@@ -30,7 +30,7 @@ body {
 }
 
 header {
-    height: 240px;
+    height: 200px;
     width: 100%;
     top: 0;
 }
@@ -63,7 +63,7 @@ header {
 /*　今はもうない↑　*/
 
 
-
+/* メニュー */
 .home-index {
     background-color: #999;
     opacity: 0.7;
@@ -95,9 +95,10 @@ header {
     top: 20px;
     right: 20px;
 }
+/* メニュー */
 
 .topper {
-    padding: 100px;
+    padding: 50px 100px 100px 100px;
 }
 
 .footer-logo {
