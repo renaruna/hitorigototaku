@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="responsive.css">
@@ -44,35 +43,26 @@
     </div>
 
     <!-- スライダー -->
-    <div id="stamps" class="stamps-section">
-      <div class="container">
-        <div id="stamp-carousel" class="carousel slide" data-ride="carousel"> 
-          <ol class="carousel-indicators">
-            <li data-target="#stamp-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#stamp-carousel" data-slide-to="1" class=""></li>
-            <li data-target="#stamp-carousel" data-slide-to="2" class=""></li>
-            <li data-target="#stamp-carousel" data-slide-to="3" class=""></li>
-            <li data-target="#stamp-carousel" data-slide-to="4" class=""></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="item stamp-box active">
-              <img src="nefrit1.png" class="stamp-image">
-            </div>
-            <div class="item stamp-box">
-                <img src="nefrit2.jpg" class="stamp-image">
-              </div>
-            <div class="item stamp-box">
-              <img src="nefrit3.jpeg" class="stamp-image">
-            </div>
-            <div class="item stamp-box">
-              <img src="nefrit4.jpeg" class="stamp-image">
-            </div>
-            <div class="item stamp-box">
-                <img src="nefrit5.jpeg" class="stamp-image">
-              </div>
-          </div> 
+    <div class="slide-wrapper">
+      <h2 class="slide-title">立ち絵</h2>
+        <div class="change-btn-wrapper">
+          <div class="change-btn prev-btn">← 前へ</div>
+          <div class="change-btn next-btn">次へ →</div>
         </div>
-      </div>
+         <ul class="slides">
+           <li class="slide active"><img src="nefrit1.png"></li>
+           <li class="slide"><img src="nefrit2.jpg"></li>
+           <li class="slide"><img src="nefrit3.jpeg"></li>
+           <li class="slide"><img src="nefrit4.jpeg"></li>
+           <li class="slide"><img src="nefrit5.jpeg"></li>
+         </ul>
+         <div class="index-btn-wrapper">
+          <div class="index-btn">1</div>
+          <div class="index-btn">2</div>
+          <div class="index-btn">3</div>
+          <div class="index-btn">4</div>
+          <div class="index-btn">5</div>
+         </div>
     </div>
 
     <!-- キャラクターシート -->
