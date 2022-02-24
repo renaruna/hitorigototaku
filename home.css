@@ -9,7 +9,7 @@ a {
 }
 
 a:hover {
-    color: #F0F0FF;
+    color: #B0B0FF;
 }
 
 body {
@@ -77,10 +77,10 @@ header {
     font-size: 20px;
 }
 
-.home-index a {
+.home-index p {
     background-color: #999;
     color: black;
-    display: inline-block;
+    display: block;
     margin-bottom: 20px;
 }
 
