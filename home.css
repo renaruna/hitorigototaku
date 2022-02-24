@@ -79,11 +79,14 @@ header {
 
 .home-index p {
     background-color: #999;
-    color: black;
     display: block;
     margin-bottom: 20px;
 }
 
+.home-index a {
+    background-color: #999;
+    color: white;
+}
 
 .menu-icon {
     font-size: 40px;
