@@ -194,37 +194,80 @@ header {
 }
 
 
-/*--------- ここからstamp --------*/
-.stamps-section {
-    text-align: center;
-    padding: 60px 0;
-}
-  
-
-.stamp-box {
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 80px;
-}
-  
-.stamp-image {
-    width: 200px;
-    height: 200px;
-    margin: auto 0;
-    padding: 0px;
-}
-  
-#stamp-carousel img {
-    display: inline-block;
-}
-  
-#stamp-carousel li {
-    background-color: #869791;
+/*--------- ここからslider --------*/
+.slide-wrapper {
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+  color: #5e6f84;
+  padding: 60px 0;
 }
 
-.carousel-indicators {
-    z-index: 5;
+.slide-title {
+  font-size: 40px;
+  margin-bottom: 30px;
 }
- 
-  /*-------  ここまでstamp  --------*/
+
+.change-btn-wrapper {
+  width: 500px;
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+.change-btn-wrapper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.prev-btn {
+  cursor: pointer;
+  float: left;
+  display: none;
+}
+
+.next-btn {
+  cursor: pointer;
+  float: right;
+}
+
+.slides {
+  padding: 0;
+}
+
+.slide {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.slide img {
+  width: 500px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.index-btn-wrapper {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.index-btn {
+  display: inline-block;
+  color: #4e90af;
+  background-color: #e0f5ff;
+  width: 40px;
+  padding: 6px 0;
+  margin: 0 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.index-btn:hover {
+  color: #fff;
+  background-color: #5cabd0;
+}
+  /*-------  ここまでslider  --------*/
 
