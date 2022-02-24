@@ -244,8 +244,8 @@ header {
 }
 
 .slide img {
-  width: 500px;
-  height: auto;
+  width: auto;
+  height: 800px;
   border-radius: 5px;
 }
 
