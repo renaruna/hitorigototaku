@@ -75,9 +75,10 @@ header {
 }
 
 .home-index a {
+    background-color: #999;
     color: black;
     display: inline-block;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 
