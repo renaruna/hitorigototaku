@@ -199,7 +199,7 @@ th, td {
 th {
     width: 400px;
     text-align: right;
-    vertical-align: top;
+    vertical-align: middle;
 }
   
 td {
