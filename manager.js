@@ -54,7 +54,7 @@ function display() {
             sKP += '<a href="'+sArray[i][12]+'">'+sArray[i][1]+'</a><br>';
         }
         if (sArray[i][7]) {
-            sPL += '<td><a href="'+sArray[i][12]+'">'+sArray[i][1]+'</a></td><td><a href="'+search(sArray[i][7])+'">'+sArray[i][7]+'</a></td></tr><tr>'
+            sPL += '<td><a href="'+sArray[i][12]+'">'+sArray[i][1]+'</a></td><td><a href="'+search(sArray[i][7])+'">'+sArray[i][7]+'</a></td></tr><tr>';
         }
     }
 
