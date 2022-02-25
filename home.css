@@ -172,11 +172,6 @@ header {
     text-align: left;
 }
 
-.npc {
-    border-bottom: #999 solid 1px;
-    padding-bottom: 15px;
-}
-
 .top {
     padding: 25px 100px;
     text-align: center;
@@ -192,9 +187,23 @@ header {
     font-size: 16px;
 }
 
-
-.status {
-    line-height: 20px;
+table {
+    width: 75%;
+    margin: auto;
+}
+  
+th, td {
+    padding: 5px 15px;
+    vertical-align: top;
+}
+  
+th {
+    width: 300px;
+    text-align: right;
+}
+  
+td {
+    text-align: left;
 }
 
 .bottom {
