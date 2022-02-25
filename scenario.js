@@ -2,6 +2,7 @@ const titleElement = document.getElementById('title');
 const makerElement = document.getElementById('maker');
 const urlElement = document.getElementById('url');
 const dateElement = document.getElementById('date');
+const playTimeElement = document.getElementById('playTime');
 const kpElement = document.getElementById('KP');
 const driverElement = document.getElementById('driverPC');
 const managerElement = document.getElementById('managerPC');
@@ -141,6 +142,7 @@ function display() {
         dataObject.maker = sArray[scenarioID][2];
         dataObject.url = sArray[scenarioID][3];
         dataObject.date = sArray[scenarioID][4];
+        dataObject.time = sArray[scenarioID][14];
         dataObject.KP = sArray[scenarioID][5];
         dataObject.driver = sArray[scenarioID][6];
         dataObject.manager = sArray[scenarioID][7];
@@ -155,6 +157,7 @@ function display() {
         makerElement.textContent = dataObject.maker;
         urlElement.innerHTML =  '<a href="'+dataObject.url+'" >'+dataObject.url+'</a>';
         dateElement.textContent = dataObject.date;
+        playTimeElement.textContent = dataObject.time;
         
         //KP
         let memberKP;
