@@ -55,9 +55,6 @@ function display() {
                 sKP += '<a href="'+sArray[i][12]+'">'+change(sArray[i][1], "#", ",")+'</a><br>';
             }
         }
-        if (sArray[i][7]) {
-            sPL += '<a href="'+sArray[i][12]+'">'+change(sArray[i][1], "#", ",")+'</a><br>';
-        }
     }
 
     kpElement.innerHTML = sKP;
