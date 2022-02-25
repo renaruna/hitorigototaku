@@ -37,45 +37,49 @@
     </header>
 
     <div class="top">
-      <h1 class="title">紅の幻想</h1>
+        <h1 class="title" id="title"></h1>
     </div>
 
     <div class="items">
         <div class="item">
-            <p class="item-left">シナリオ作成者</p>
-            <p class="item-right">---</p>
+            <table>
+                <tr>
+                    <th>シナリオ作成者</th> <td><p id="maker"></p></td>
+                </tr>
+                <tr>
+                    <th>シナリオページ</th> <td><p id="url"></p></td>
+                </tr>
+            </table>
         </div>
+        <div class="item" id="jintext"></div>
         <div class="item">
-            <p class="item-left">シナリオページ</p>
-            <a class="item-right" href="https://dx3.booth.pm/items/441164" >https://dx3.booth.pm/items/441164</a>
-        </div>
-        <div class="item">
-            <p class="item-left">プレイした日付</p>
-            <p class="item-right">2020/4/25</p>
-        </div>
-        <div class="item">
-            <p class="item-left">KP</p>
-            <a class="item-right" href="#">スピリチュアルな存在。</a>
-        </div>
-        <div class="item">
-            <p class="item-left">CAST</p>
-            <div class="item-right">
-                <div class="npc">
-                    <p>NPC</p>
-                    <p><a href="#">麻宮一星</a>：<a href="#">スピリチュアルな存在。</a></p>
-                </div>
-                <div class="pc">
-                    <p>PC</p>
-                    <p><a href="#">ミッシェル</a>：<a href="#">戦犯</a></p>
-                    <p><a href="nefrit.html">ニーフリット</a>：<a href="#">管理人</a></p>
-                    <p><a href="#">ガネッシュ</a>：<a href="#">上司</a></p>
-                    <p><a href="#">青子</a>：<a href="#">創造主</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <p class="item-left">その他</p>
-            <p class="item-right">すべてのはじまり。ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+            <table>
+                <tr>
+                    <th>プレイした日付</th> <td><p id="date"></p></td>
+                </tr>
+                <tr>
+                    <th>KP</th> <td><p id="KP"></p></td>
+                </tr>
+                <tr>
+                    <th>CAST</th> 
+                    <td>
+                        <div>
+                        <p>PC</p>
+                        <p id="driverPC"></p>
+                        <p id="managerPC"></p>
+                        <p id="bossPC"></p>
+                        <p id="spiritualPC"></p>
+                        <p id="warcrimPC"></p>
+                        <p id="creatorPC"></p>
+                        <p id="elsePC"></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>その他</th>
+                    <td><p id="misc"></p></td>
+                </tr>
+            </table>
         </div>
     </div>
     
@@ -86,6 +90,7 @@
       </div>
     </footer>
 
+    <script src="scenario.js"></script>
     <script type="text/javascript" src="character.js"></script>
   </body>
 </html>
