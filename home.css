@@ -188,7 +188,6 @@ header {
 }
 
 table {
-    width: 90%;
     margin: 50px auto;
 }
   
@@ -198,11 +197,12 @@ th, td {
 }
   
 th {
-    width: 500px;
+    width: 400px;
     text-align: right;
 }
   
 td {
+    width: 600px;
     text-align: left;
 }
 
