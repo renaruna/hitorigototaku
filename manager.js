@@ -56,7 +56,7 @@ function display() {
             }
         }
         if (sArray[i][7]) {
-            sPL += '<a href="'+sArray[i][12]+'">'+change(sArray[i][1], "#", ",")+'</a><a href="'+search(sArray[i][7])+'">'+sArray[i][7]+'</a><br>';
+            sPL += '<a href="'+sArray[i][12]+'">'+change(sArray[i][1], "#", ",")+'</a><br>';
         }
     }
 
