@@ -46,25 +46,6 @@ header {
     padding: -100px;
 }
 
-/*　今はもうない↓　*/
-.header-right {
-    float: right;
-}
-
-.rink-text {
-    color: #666;
-    padding: 0 30px;
-    display: inline-block;
-    line-height: 80px;
-}
-
-.rink-text:hover {
-    background-color: #999;
-    color: white;
-}
-/*　今はもうない↑　*/
-
-
 /* メニュー */
 .home-index {
     background-color: #999;
@@ -146,30 +127,8 @@ header {
 }
 
 .items {
-    max-width: 1170px;
-    width: 100%;
     padding: 0 250px;
     font-size: 18px;
-}
-
-.chara-item {
-    padding-top: 30px;
-}
-
-.item-left {
-    display: inline-block;
-    width: 170px;
-    line-height: 40px;
-    vertical-align: top;
-    text-align: left;
-}
-
-.item-right {
-    display: inline-block;
-    padding-left: 50px;
-    line-height: 40px;
-    vertical-align: center;
-    text-align: left;
 }
 
 .top {
