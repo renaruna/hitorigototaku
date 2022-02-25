@@ -33,13 +33,14 @@
                 </div>
             </div>
         </div>
-            
     </header>
+    
+    <script>var charaID = 1;</script>
 
     <!-- キャラクター名 -->
     <div class="top">
-      <h1 class="title">ニーフリット</h1>
-      <p>にーふりっと</p>
+        <h1 class="title" id="name"></h1>
+        <p id="hiraname"></p>
     </div>
 
     <!-- スライダー -->
@@ -66,117 +67,73 @@
 
     <!-- キャラクターシート -->
     <div class="items">
-        <div class="chara-item">
-            <p class="item-left">年齢</p>
-            <p class="item-right">14歳</p>
-        </div>
-        <div class="chara-item">
-            <p class="item-left">性別</p>
-            <p class="item-right">男</p>
-        </div>
-        <div class="chara-item">
-            <p class="item-left">職業</p>
-            <p class="item-right">中学生、ゲーマー</p>
-        </div>
-        <div class="chara-item">
-            <p class="item-left">キャラクター作成者</p>
-            <p class="item-right"><a href="#">管理人</a></p>
-        </div>
-        <div class="chara-item">
-            <p class="item-left">カラー</p>
-            <p class="item-right">水色がかった白、黄色</p>
-        </div>
-        <div class="chara-item">
-            <div class="item-left">
-                <p>ステータス</p>
-                <div class="status bottom">
-                    <p>HP：8/8</p>
-                    <p>MP：12/12</p>
-                    <p>SAN：57/60</p>
-                    <p>DB：0</p>
-                </div>
-            </div>
-            <div class="item-right status">
-               <p>STR：14</p>
-               <p>CON：7</p>
-               <p>POW：12</p>
-               <p>DEX：7</p>
-               <p>APP：11</p>
-               <p>SIZ：9</p>
-               <p>INT：18</p>
-               <p>EDU：12</p>
-            </div>
-        </div>
-        <div class="chara-item">
-            <p class="item-left">技能値</p>
-            <div class="item-right status">
-                <p>ccb<=57　　SAN</p>
-                <p>ccb<=60　　幸運</p>
-                <p>ccb<=90　　アイデア</p>
-                <p>ccb<=60　　知識</p>
-                <p>ccb<=75　　目星</p>
-                <p>ccb<=80　　聞き耳</p>
-                <p>ccb<=50　　図書館</p>
-                <p>ccb<=3　　クトゥルフ神話</p>
-                <p>ccb<=14　　回避</p>
-                <p>ccb<=80　　コンピュータ</p>
-                <p>ccb<=42　　隠れる</p>
-                <p>ccb<=60　　機械修理</p>
-                <p>ccb<=30　　製作（衣装）</p>
-                <p>ccb<=25　　英語</p>
-                <p>ccb<=30　　日本語</p>
-                <p>ccb<=60　　ロシア語</p>
-                <p>ccb<=29　　変装</p>
-                <p>ccb<=50　　投擲</p>
-                <p>ccb<=30　　拳銃</p>
-                <p>ccb<=30　　鍵開け</p>
-                <p>ccb<=40　　日本刀（ブラックニンジャソード）</p>
-                <p>1d6+1+db　ブラックニンジャソード</p>
-            </div>
-        </div>
-        <div class="chara-item">
-            <p class="item-left">設定</p>
-            <p class="item-right">かわいいのが好き。</p>
-        </div>
-        <div class="chara-item">
-            <p class="item-left">参加したシナリオ</p>
-            <div class="item-right status">
-                <p><a href="kurenai.html">紅の幻想</a></p>
-                <p><a href="#">ハロウィンワンナイトクルーズ</a></p>
-                <p><a href="#">n回目の初演</a></p>
-                <p><a href="#">英雄たちのフェルンウェー</a></p>
-                <p><a href="#">デッドレックエンコード</a></p>
-                <p><a href="#">鳥籠のカナリア</a></p>
-            </div>
-        </div>
-
-        <!-- コメント-->
-        <div class="chara-item">
-            <p class="item-left">作成者のコメント</p>
-            <p class="item-right">かわいいよおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお</p>
-        </div>
-        <div class="chara-item">
-            <p class="item-left">運転手のコメント</p>
-            <p class="item-right"></p>
-        </div>
-        <div class="chara-item">
-            <p class="item-left">上司のコメント</p>
-            <p class="item-right"></p>
-        </div>
-        <div class="chara-item">
-            <p class="item-left">スピリチュアルな存在。のコメント</p>
-            <p class="item-right"></p>
-        </div>
-        <div class="chara-item">
-            <p class="item-left">戦犯のコメント</p>
-            <p class="item-right"></p>
-        </div>
-        <div class="chara-item">
-            <p class="item-left">創造主のコメント</p>
-            <p class="item-right"></p>
-        </div>
+      <table>
+        <tr>
+            <th>年齢</th> <td><p id="age"></p></td>
+        </tr>
+        <tr>
+            <th>性別</th> <td><p id="sex"></p></td>
+        </tr>
+        <tr>
+            <th>職業</th> <td><p id="job"></p></td>
+        </tr>
+        <tr>
+            <th>キャラクター作成者</th> <td><p id="member"></p></td>
+        </tr>
+        <tr>
+            <th>色</th> <td><p id="color"></p></td>
+        </tr>
+        <tr>
+            <th>立ち絵作成者</th> <td><p id="maker"></p></td>
+        </tr>
+        <tr>
+            <th>ステータス</th>
+            <td>
+              <div class="item">
+                <p>HP：<label id="hp">____<label></p>
+                <p>MP：<label id="mp">____<label></p>
+                <p>SAN：<label id="san">____<label></p>
+                <p>DB：<label id="db">____<label></p>
+                <p>STR：<label id="str">____<label></p>
+                <p>CON：<label id="con">____<label></p>
+                <p>POW：<label id="pow">____<label></p>
+                <p>DEX：<label id="dex">____<label></p>
+                <p>APP：<label id="app">____<label></p>
+                <p>SIZ：<label id="siz">____<label></p>
+                <p>INT：<label id="int">____<label></p>
+                <p>EDU：<label id="edu">____<label></p>
+              </div>
+            </td>
+        </tr>
+        <tr>
+            <th>技能値</th> <td><p id="skill"></p></td>
+        </tr>
+        <tr>
+            <th>設定</th> <td><p id="setting"></p></td>
+        </tr>
+        <tr>
+            <th>参加したシナリオ</th> <td><p id="scenario"></p></td>
+        </tr>
+        <tr>
+            <th>運転手のコメント</th> <td><p id="driver"></p></td>
+        </tr>
+        <tr>
+            <th>管理人のコメント</th> <td><p id="manager"></p></td>
+        </tr>
+        <tr>
+            <th>上司のコメント</th> <td><p id="boss"></p></td>
+        </tr>
+        <tr>
+            <th>スピリチュアルな存在。のコメント</th> <td><p id="spiritual"></p></td>
+        </tr>
+        <tr>
+            <th>戦犯のコメント</th> <td><p id="warcrim"></p></td>
+        </tr>
+        <tr>
+            <th>創造主のコメント</th> <td><p id="creator"></p></td>
+        </tr>
+      </table>
     </div>
-    
 
     <footer>
       <div>
@@ -184,6 +141,7 @@
       </div>
     </footer>
 
+    <script src="chara-manager.js"></script>
     <script type="text/javascript" src="character.js"></script>
   </body>
 </html>
