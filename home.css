@@ -167,10 +167,6 @@ td {
     
 }
 
-table, th, td {
-    border: 5px solid #888;
-}
-
 .bottom {
     margin-top: 110px;
 }
