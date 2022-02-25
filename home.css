@@ -128,7 +128,6 @@ header {
 
 .items {
     padding: 0 250px;
-    font-size: 18px;
 }
 
 .top {
@@ -178,7 +177,7 @@ td {
   text-align: center;
   width: 1000px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 .change-btn-wrapper {
