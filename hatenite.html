@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>独り言卓INDEX</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="android-chrome-256x256.png">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+  <body>
+
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <img class="logo" src="header-logo1.gif">
+            </div>
+            <div class="menu">
+                <span class="fa fa-bars menu-icon"></span>
+
+                <div class="home-index">
+                    <p><a href="home.html#i1">シナリオ一覧</a></p>
+                    <p><a href="home.html#i2">キャラクター一覧</a></p>
+                    <p><a href="home.html#i3">独り言卓メンバー一覧</a></p>
+                </div>
+            </div>
+        </div>
+            
+    </header>
+    
+    <script>
+        var scenarioID = 28;
+        var jin = 5;
+    </script>
+
+    <div class="top">
+        <h1 class="title" id="title"></h1>
+    </div>
+
+    <div class="items">
+        <div class="item">
+            <table>
+                <tr>
+                    <th>シナリオ作成者</th> <td><p id="maker"></p></td>
+                </tr>
+                <tr>
+                    <th>シナリオページ</th> <td><p id="url"></p></td>
+                </tr>
+            </table>
+        </div>
+        <div class="item" id="jintext"></div>
+        <div class="item">
+            <table>
+                <tr>
+                    <th>プレイした日付</th> <td><p id="date"></p></td>
+                </tr>
+                <tr>
+                  <th>プレイ時間</th> <td><p id="playTime"></p></td>
+                </tr>
+                <tr>
+                    <th>KP</th> <td><p id="KP"></p></td>
+                </tr>
+                <tr>
+                    <th>CAST</th> 
+                    <td>
+                        <div>
+                        <p>PC</p>
+                        <p id="driverPC"></p>
+                        <p id="managerPC"></p>
+                        <p id="bossPC"></p>
+                        <p id="spiritualPC"></p>
+                        <p id="warcrimPC"></p>
+                        <p id="creatorPC"></p>
+                        <p id="elsePC"></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>その他</th>
+                    <td><p id="misc"></p></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+
+    <footer>
+      <div>
+        <img class="footer-logo" src="footer-logo1.gif">
+      </div>
+    </footer>
+
+    <script src="scenario.js"></script>
+    <script type="text/javascript" src="character.js"></script>
+  </body>
+</html>
