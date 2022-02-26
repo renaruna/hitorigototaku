@@ -1,3 +1,4 @@
+/*--------- 全体設定 ---------*/
 * {
     background-color: #fffff0;
     box-sizing: border-box;
@@ -17,36 +18,32 @@ a:hover {
 body {
     font-family: "游明朝","游明朝体";
 }
+/*--------- 全体設定 ---------*/
 
-
-.index li {
-    list-style: none;
-    padding-bottom: 20px;
-    font-size: 20px;
-}
-
+/*--------- ヘッダー ---------*/
 .header-container {
     width: 100%;
     margin: 0 auto;
 }
 
 header {
-    height: 200px;
+    height: 150px;
     width: 100%;
     top: 0;
 }
 
 .logo {
-    height: 200px;
+    height: 150px;
     width: auto;
 }
 
 .header-left {
     float: left;
-    padding: -100px;
+    padding: 20px;
 }
+/*--------- ヘッダー ---------*/
 
-/* メニュー */
+/*--------- メニュー ---------*/
 .home-index {
     background-color: #999;
     opacity: 0.7;
@@ -78,20 +75,20 @@ header {
     top: 20px;
     right: 20px;
 }
-/* メニュー */
+/*--------- メニュー ---------*/
 
-.topper {
-    padding: 25px 100px;
-}
-
+/*--------- フッター ---------*/
 .footer-logo {
     display: block;
     margin: 20px auto;
     height: 400px;
 }
+/*--------- フッター ---------*/
 
-.lists {
-    padding: 0 100px;
+/*--------- ホーム ---------*/
+/* 上 */
+.topper {
+    padding: 25px 100px;
 }
 
 .topper-title {
@@ -104,6 +101,17 @@ header {
 .index {
     border-top: #999 solid 2px;
     padding-top: 30px;
+}
+
+.index li {
+    list-style: none;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+/* 中 */
+.lists {
+    padding: 0 100px;
 }
 
 .list {
@@ -125,16 +133,10 @@ header {
     padding-bottom: 15px;
     margin: 15px;
 }
+/*--------- ホーム ---------*/
 
-.items {
-    padding: 0 250px;
-}
-
-.items h2 {
-    padding: 0 0 0 150px;
-    font-size: 25px;
-}
-
+/*--------- 内容 ---------*/
+/* タイトル */
 .top {
     padding: 0 100px;
     text-align: center;
@@ -148,6 +150,16 @@ header {
 
 .top p {
     font-size: 16px;
+}
+
+/* 中身 */
+.items {
+    padding: 0 250px;
+}
+
+.items h2 {
+    padding: 0 0 0 150px;
+    font-size: 25px;
 }
 
 table {
@@ -170,13 +182,14 @@ td {
     width: 600px;
     text-align: left;
 }
-
+/*--------- 内容 ---------*/
 
 
 .bottom {
     margin-top: 110px;
 }
 
+/*--------- メンバー ---------*/
 .managerColor p {
     background-color: pink;
 }
@@ -197,6 +210,7 @@ td {
     text-align: left;
 }
 
+/*--------- メンバー ---------*/
 
 /*--------- ここからslider --------*/
 .slide-wrapper {
@@ -266,5 +280,5 @@ td {
   color: #fff;
   background-color: #5cabd0;
 }
-  /*-------  ここまでslider  --------*/
+/*-------  ここまでslider  --------*/
 
