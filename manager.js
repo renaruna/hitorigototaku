@@ -1,6 +1,6 @@
 const kpElement = document.getElementById('scenarioKp');
 const plElement = document.getElementById('scenarioPl');
-
+const pl2Element = document.getElementById('charaPl');
 const cArray = [];
 const sArray = [];
 
@@ -48,6 +48,7 @@ function convertArray(dataC, dataS) {
 function display() {
     let sKP = "";
     let sPL = "";
+    let cPL = "";
 
     for (let i = 0; i < sArray.length; i++) {
         if (sArray[i][5].indexOf("管理人") !== -1) {
@@ -56,12 +57,14 @@ function display() {
             }
         }
         if (sArray[i][7]) {
-            sPL += '<td><a href="'+sArray[i][12]+'">'+change(sArray[i][1], "#", ",")+'</a></td><td><a href="'+search(sArray[i][7])+'">'+sArray[i][7]+'</a></td></tr><tr>';
+            sPL += '<a href="'+sArray[i][12]+'">'+change(sArray[i][1], "#", ",")+'</a><br>';
+            cPL += '<a href="'+search(sArray[i][7])+'">'+sArray[i][7]+'</a><br>';
         }
     }
 
     kpElement.innerHTML = sKP;
-    plElement.innerHTML = sPL.slice(0, -9);
+    plElement.innerHTML = sPL;
+    pl2Element.innerHTML = cPL;
 }
 
 function change(text, a, b) {
