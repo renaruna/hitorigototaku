@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理人/独り言卓INDEX</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="android-chrome-256x256.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+  <body>
+
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <img class="logo" src="header-logo1.gif">
+            </div>
+            <div class="menu">
+                <span class="fa fa-bars menu-icon"></span>
+
+                <div class="home-index">
+                  <p><a href="home.html#i1">シナリオ一覧</a></p>
+                    <p><a href="home.html#i2">キャラクター一覧</a></p>
+                    <p><a href="home.html#i3">独り言卓メンバー一覧</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- メンバー名 -->
+    <div class="top">
+        <h1 class="title">管理人</h1>
+    </div>
+
+    <!-- メンバーシート -->
+    <div class="items">
+        <table>
+            <tr>
+                <th>メンバーカラー</th> 
+                <td>
+                    <p>ピンク</p>
+                    <p id="managerColor"></p>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>KPとして参加したシナリオ</th> <td><p id="scenarioKp"></p></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>PLとして参加したシナリオ</th><td><p id="scenarioPl"></p></td>
+            </tr>   
+        </table>
+    </div>
+
+    <footer>
+      <div>
+        <img class="footer-logo" src="footer-logo1.gif">
+      </div>
+    </footer>
+
+    <script src="manager.js"></script>
+    <script type="text/javascript" src="character.js"></script>
+  </body>
+</html>
