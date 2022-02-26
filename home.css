@@ -179,6 +179,22 @@ table, th, td {
     margin-top: 110px;
 }
 
+.managerColor {
+    background-color: pink;
+}
+
+.sinachara th {
+    text-align: center;
+}
+
+#scenarioPl {
+    text-align: right;
+}
+
+#charaPl {
+    text-align: left;
+}
+
 
 /*--------- ここからslider --------*/
 .slide-wrapper {
