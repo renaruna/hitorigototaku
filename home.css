@@ -181,8 +181,12 @@ td {
     background-color: pink;
 }
 
-.sinachara th {
-    text-align: center;
+.memberLeft {
+    text-align: right;
+}
+
+.memberRight {
+    text-align: left;
 }
 
 #scenarioPl {
