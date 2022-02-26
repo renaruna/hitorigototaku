@@ -38,9 +38,10 @@ header {
 }
 
 .logo {
-    height: 240px;
-    width: 270px;
+    height: 200px;
+    width: auto;
 }
+
 .header-left {
     float: left;
     padding: -100px;
