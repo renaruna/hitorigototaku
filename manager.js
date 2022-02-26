@@ -52,7 +52,7 @@ function display() {
     for (let i = 0; i < sArray.length; i++) {
         if (sArray[i][5].indexOf("管理人") !== -1) {
             if (sArray[i][0]) {
-                sKP += '<a href="'+sArray[i][12]+'">'+sArray[i][1]+'</a><br>';
+                sKP += '<a href="'+sArray[i][12]+'">'+change(sArray[i][1], "#", ",")+'</a><br>';
             }
         }
         if (sArray[i][7]) {
@@ -62,6 +62,15 @@ function display() {
 
     kpElement.innerHTML = sKP;
     plElement.innerHTML = sPL.slice(0, -9);
+}
+
+function change(text, a, b) {
+    let i = 0;
+    let length = text.length;
+    for (i=0; i < length; i++) {
+      text = text.replace(a,b); 
+    }
+    return text;
 }
 
 function search(chara) {
