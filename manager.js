@@ -49,7 +49,7 @@ function display() {
     let sKP = "";
     let sPL = "";
 
-    for (let i = 1; i <= sArray.length; i++) {
+    for (let i = 0; i < sArray.length; i++) {
         if (sArray[i][5].indexOf("管理人") !== -1) {
            
                 sKP += '<a href="'+sArray[i][12]+'">'+change(sArray[i][1], "#", ",")+'</a><br>';
@@ -65,7 +65,7 @@ function display() {
 }
 
 function search(chara) {
-    for (let j=1; j <= cArray.length; j++) {
+    for (let j=0; j < cArray.length; j++) {
         if (chara.indexOf(cArray[j][1]) !== -1) {
             return cArray[j][29];
         }
