@@ -169,7 +169,10 @@ th {
 td {
     width: 600px;
     text-align: left;
-    
+}
+
+table, th, td {
+    border: 1px solid #888;
 }
 
 .bottom {
