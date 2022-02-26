@@ -27,19 +27,19 @@ body {
 }
 
 header {
-    height: 150px;
+    height: 200px;
     width: 100%;
     top: 0;
 }
 
 .logo {
-    height: 150px;
+    height: 180px;
     width: auto;
 }
 
 .header-left {
     float: left;
-    padding: 20px;
+    padding: 10px 20px;
 }
 /*--------- ヘッダー ---------*/
 
