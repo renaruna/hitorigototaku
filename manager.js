@@ -50,13 +50,13 @@ function display() {
     let sPL = "";
 
     for (let i = 0; i < sArray.length; i++) {
-        if (sArray[i+1][5].indexOf("管理人") !== -1) {
-            if (sArray[i+1][0]) {
-                sKP += '<a href="'+sArray[i+1][12]+'">'+change(sArray[i+1][1], "#", ",")+'</a><br>';
+        if (sArray[i][5].indexOf("管理人") !== -1) {
+            if (sArray[i][0]) {
+                sKP += '<a href="'+sArray[i][12]+'">'+change(sArray[i][1], "#", ",")+'</a><br>';
             }
         }
         if (sArray[i+1][7]) {
-            sPL += '<td><a href="'+sArray[i+1][12]+'">'+change(sArray[i+1][1], "#", ",")+'</a></td><td><a href="'+search(sArray[i+1][7])+'">'+sArray[i+1][7]+'</a></td></tr><tr>';
+            sPL += '<td><a href="'+sArray[i][12]+'">'+change(sArray[i][1], "#", ",")+'</a></td><td><a href="'+search(sArray[i][7])+'">'+sArray[i][7]+'</a></td></tr><tr>';
         }
     }
 
@@ -75,8 +75,8 @@ function change(text, a, b) {
 
 function search(chara) {
     for (let j=0; j < cArray.length; j++) {
-        if (chara.indexOf(cArray[j+1][1]) !== -1) {
-            return cArray[j+1][29];
+        if (chara.indexOf(cArray[j][1]) !== -1) {
+            return cArray[j][29];
         }
     }
     return "#";
