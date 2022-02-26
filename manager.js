@@ -50,7 +50,7 @@ function display() {
     let sPL = "";
     let cPL = "";
 
-    for (let i = 0; i < sArray.length; i++) {
+    for (let i = 1; i <= sArray.length; i++) {
         if (sArray[i][5].indexOf("管理人") !== -1) {
             if (sArray[i][0]) {
                 sKP += '<a href="'+sArray[i][12]+'">'+change(sArray[i][1], "#", ",")+'</a><br>';
