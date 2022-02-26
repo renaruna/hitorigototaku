@@ -136,7 +136,7 @@ header {
 }
 
 .top {
-    padding: 25px 100px;
+    padding: 0 100px;
     text-align: center;
     border-bottom: #F6F6E8 solid 12px;
 }
