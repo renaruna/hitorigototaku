@@ -73,13 +73,5 @@ function search(chara) {
     return "#";
 }
 
-function change(text, a, b) {
-    let i = 0;
-    let length = text.length;
-    for (i=0; i < length; i++) {
-      text = text.replace(a,b); 
-    }
-    return text;
-}
 
 getCsvData('character-index - manager.csv', 'website - scenario.csv');
