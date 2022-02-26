@@ -52,11 +52,11 @@ function display() {
     for (let i = 1; i <= sArray.length; i++) {
         if (sArray[i][5].indexOf("管理人") !== -1) {
             if (sArray[i][0]) {
-                sKP += '<a href="'+sArray[i][12]+'">'+change(sArray[i][1], "#", ",")+'</a><br>';
+                sKP += '<a href="'+sArray[i][12]+'">'+sArray[i][1]+'</a><br>';
             }
         }
         if (sArray[i][7]) {
-            sPL += '<a href="'+sArray[i][12]+'">'+change(sArray[i][1], "#", ",")+'</a><a href="'+search(sArray[i][7])+'">'+sArray[i][7]+'</a><br>';
+            sPL += '<a href="'+sArray[i][12]+'">'+sArray[i][1]+'</a><a href="'+search(sArray[i][7])+'">'+sArray[i][7]+'</a><br>';
         }
     }
 
