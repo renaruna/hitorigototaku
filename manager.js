@@ -49,37 +49,26 @@ function display() {
     let sKP = "";
     let sPL = "";
 
-    for (let i = 1; i <= sArray.length; i++) {
+    for (let i = 0; i < sArray.length; i++) {
         if (sArray[i][5].indexOf("管理人") !== -1) {
-            if (sArray[i][0]) {
-                sKP += '<a href="'+sArray[i][12]+'">'+sArray[i][1]+'</a><br>';
-            }
+            sKP += '<a href="'+sArray[i][12]+'">'+sArray[i][1]+'</a><br>';
         }
         if (sArray[i][7]) {
-            sPL += '<a href="'+sArray[i][12]+'">'+sArray[i][1]+'</a><a href="'+search(sArray[i][7])+'">'+sArray[i][7]+'</a><br>';
+            sPL += '<td><a href="'+sArray[i][12]+'">'+sArray[i][1]+'</a></td><td><a href="'+search(sArray[i][7])+'">'+sArray[i][7]+'</a></td></tr><tr>'
         }
     }
 
     kpElement.innerHTML = sKP;
-    plElement.innerHTML = sPL;
+    plElement.innerHTML = sPL.slice(0, -9);
 }
 
 function search(chara) {
-    for (let j=1; j <= cArray.length; j++) {
+    for (let j=0; j < cArray.length; j++) {
         if (chara.indexOf(cArray[j][1]) !== -1) {
             return cArray[j][29];
         }
     }
     return "#";
-}
-
-function change(text, a, b) {
-    let i = 0;
-    let length = text.length;
-    for (i=0; i < length; i++) {
-      text = text.replace(a,b); 
-    }
-    return text;
 }
 
 getCsvData('character-index - manager.csv', 'website - scenario.csv');
