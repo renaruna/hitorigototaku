@@ -212,7 +212,7 @@ td {
     }
 
     .title {
-        margin: 0;
+        margin: 20px 0 0 0;
     }
 
     /* 中身 */
@@ -233,7 +233,7 @@ td {
     }
 
     th {
-        width: 200px;
+        width: 190px;
         padding: 0 10px 0 0;
     }
 
@@ -343,6 +343,10 @@ td {
 .index-btn:hover {
   color: #fff;
   background-color: #5cabd0;
+}
+
+@media (max-width: 1000px) {
+    width: 550px;
 }
 /*-------  ここまでslider  --------*/
 
