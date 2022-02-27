@@ -159,18 +159,20 @@ header {
 
 /* 中身 */
 .items {
-    padding-top: 15px;
+    width: 850px;
+    padding-top: 20px;
     margin: 0 auto;
 }
 
 .items h2 {
-    padding-left: 100px;
+    padding-left: 65px;
     margin: 15px 0 0 0;
     font-size: 25px;
+    color: #777;
 }
 
 table {
-    width: 1000px;
+    width: 824px;
     margin: 0 auto;
     font-size: 20px;
     border-spacing: 0;
