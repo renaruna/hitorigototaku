@@ -205,43 +205,6 @@ td {
     text-align: left;
     padding: 0 0 0 20px;
 }
-
-@media (max-width: 1000px) {
-    .top {
-        padding: 0 50px;
-    }
-
-    .title {
-        margin: 20px 0 0 0;
-    }
-
-    /* 中身 */
-    .items {
-        width: 600px;
-    }
-
-    .items h2 {
-        padding-left: 50px;
-    }
-
-    #color {
-        width: 300px;
-    }
-
-    table {
-        width: 600px;
-    }
-
-    th {
-        width: 190px;
-        padding: 0 10px 0 0;
-    }
-
-    td {
-        width: 400px;
-        padding: 0 0 0 10px;
-    }
-}
 /*--------- 内容 ---------*/
 
 /*--------- メンバー ---------*/
@@ -344,9 +307,45 @@ td {
   color: #fff;
   background-color: #5cabd0;
 }
-
-@media (max-width: 1000px) {
-    width: 550px;
-}
 /*-------  ここまでslider  --------*/
 
+@media (max-width: 1000px) {
+    .top {
+        padding: 0 50px;
+    }
+
+    .title {
+        margin: 20px 0 0 0;
+    }
+
+    /* 中身 */
+    .items {
+        width: 600px;
+    }
+
+    .items h2 {
+        padding-left: 50px;
+    }
+
+    #color {
+        width: 300px;
+    }
+
+    table {
+        width: 600px;
+    }
+
+    th {
+        width: 190px;
+        padding: 0 10px 0 0;
+    }
+
+    td {
+        width: 400px;
+        padding: 0 0 0 10px;
+    }
+    
+    .slide-wrapper {
+        width: 550px;
+    }
+}
