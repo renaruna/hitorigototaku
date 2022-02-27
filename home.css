@@ -349,3 +349,28 @@ td {
         width: 550px;
     }
 }
+
+@media (max-width: 599px) {
+    .slide-wrapper {
+        width: 100%;
+    }
+    
+    .slide img {
+        width: 90%;
+        height: auto;
+    }
+    
+    table th, table td {
+        width: 90%; /* テーブルの見出しの横幅を指定する */
+        display: block; /* ブロックレベル要素化する */
+    }
+    
+    .items {
+        width: 100%;
+    }
+
+    .items h2 {
+        padding-left: 10px;
+    }
+    
+}
