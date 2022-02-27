@@ -39,6 +39,7 @@ header {
 
 .header-left {
     float: left;
+    z-index: 99;
     padding: 10px 0 0 20px;
 }
 /*--------- ヘッダー ---------*/
@@ -145,12 +146,13 @@ header {
 
 .title {
     font-size: 50px;
-    margin: 0;
+    margin: -20px 0 0 0;
     color: #1e90ff;
 }
 
 .top p {
     font-size: 16px;
+    margin: 0 0 15px
 }
 
 /* 中身 */
@@ -167,6 +169,11 @@ table {
     width: 1000px;
     margin: 0 auto;
     font-size: 20px;
+}
+
+table p {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
 }
   
 th, td {
