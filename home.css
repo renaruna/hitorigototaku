@@ -27,7 +27,7 @@ body {
 }
 
 header {
-    height: 200px;
+    height: 190px;
     width: 100%;
     top: 0;
 }
@@ -80,7 +80,7 @@ header {
 /*--------- フッター ---------*/
 .footer-logo {
     display: block;
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
     height: 400px;
 }
 /*--------- フッター ---------*/
@@ -145,6 +145,7 @@ header {
 
 .title {
     font-size: 50px;
+    margin: 0;
     color: #1e90ff;
 }
 
@@ -169,7 +170,7 @@ table {
 }
   
 th, td {
-    padding: 2px 15px;
+    padding: 1px 15px;
     vertical-align: baseline;
 }
   
