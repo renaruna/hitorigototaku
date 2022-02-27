@@ -39,7 +39,6 @@ header {
 
 .header-left {
     float: left;
-    z-index: 99;
     padding: 10px 0 0 20px;
 }
 /*--------- ヘッダー ---------*/
@@ -140,6 +139,7 @@ header {
 /* タイトル */
 .top {
     padding: 0 100px;
+    z-index: 2;
     text-align: center;
     border-bottom: #F6F6E8 solid 12px;
 }
