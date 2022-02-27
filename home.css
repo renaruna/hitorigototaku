@@ -80,8 +80,9 @@ header {
 /*--------- フッター ---------*/
 .footer-logo {
     display: block;
-    margin: 20px auto 0 auto;
+    margin: 0 auto;
     height: 400px;
+    padding-left: 75px;
 }
 /*--------- フッター ---------*/
 
@@ -138,17 +139,16 @@ header {
 /*--------- 内容 ---------*/
 /* タイトル */
 .top {
-    padding: 0 100px;
     z-index: 2;
     text-align: center;
     border-bottom: #F6F6E8 solid 12px;
+    padding: 0 250px;
 }
 
 .title {
     font-size: 50px;
     margin: -20px 0 0 0;
     color: #1e90ff;
-    padding: 0 250px;
 }
 
 .top p {
@@ -159,11 +159,11 @@ header {
 
 /* 中身 */
 .items {
-    padding: 0 250px;
+    padding: 15px 250px 0;
 }
 
 .items h2 {
-    padding: 0 0 0 150px;
+    padding-bottom: 150px;
     font-size: 25px;
 }
 
