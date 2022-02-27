@@ -154,12 +154,11 @@ header {
 .top p {
     font-size: 16px;
     margin: 0 0 15px 0;
-    padding: 0 250px;
 }
 
 /* 中身 */
 .items {
-    width: 850px;
+    width: 1000px;
     padding-top: 20px;
     margin: 0 auto;
 }
@@ -171,8 +170,12 @@ header {
     color: #777;
 }
 
+#color {
+    width: 400px;
+}
+
 table {
-    width: 824px;
+    width: 1000px;
     margin: 0 auto;
     font-size: 20px;
     border-spacing: 0;
@@ -184,18 +187,19 @@ table p {
 }
   
 th, td {
-    padding: 0 15px;
     vertical-align: baseline;
 }
   
 th {
-    width: 324px;
+    width: 360px;
     text-align: right;
+    padding: 0 10px 0 0;
 }
   
 td {
-    width: 500px;
+    width: 640px;
     text-align: left;
+    padding: 0 0 0 10px;
 }
 /*--------- 内容 ---------*/
 
@@ -227,7 +231,7 @@ td {
   text-align: center;
   width: 1000px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 .change-btn-wrapper {
