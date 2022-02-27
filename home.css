@@ -159,11 +159,13 @@ header {
 
 /* 中身 */
 .items {
-    padding: 15px 250px 0;
+    padding-top: 15px;
+    margin: 0 auto;
 }
 
 .items h2 {
-    padding-bottom: 150px;
+    padding-left: 100px;
+    margin: 15px 0 0 0;
     font-size: 25px;
 }
 
@@ -171,6 +173,7 @@ table {
     width: 1000px;
     margin: 0 auto;
     font-size: 20px;
+    border-spacing: 0;
 }
 
 table p {
@@ -179,17 +182,17 @@ table p {
 }
   
 th, td {
-    padding: 1px 15px;
+    padding: 0 15px;
     vertical-align: baseline;
 }
   
 th {
-    width: 400px;
+    width: 324px;
     text-align: right;
 }
   
 td {
-    width: 600px;
+    width: 500px;
     text-align: left;
 }
 /*--------- 内容 ---------*/
