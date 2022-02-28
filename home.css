@@ -48,7 +48,7 @@ header {
     background-color: #999;
     opacity: 0.7;
     padding: 80px 40px;
-    z-index: 99;
+    z-index: 98;
     cursor: pointer;
     position: fixed;
     top: 0;
@@ -74,6 +74,13 @@ header {
     position: fixed;
     top: 20px;
     right: 20px;
+    background: rgba(0,0,0,0);
+    z-index: 99;
+}
+
+.menu-icon:hover {
+    background-color: #999;
+    color: #fffff0;
 }
 /*--------- メニュー ---------*/
 
@@ -359,6 +366,10 @@ td {
         padding: 0 20px;
     }
     
+    .change-btn-wrapper {
+        width: 95%;
+    }
+    
     .slide-wrapper {
         width: 100%;
     }
@@ -393,7 +404,8 @@ td {
     }
     
     table {
-        width: 90%;
+        width: 100%;
+        padding-left: 10px;
     }
     
     p {
