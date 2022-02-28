@@ -370,10 +370,11 @@ td {
     
     .index-btn {
         margin: 5px;
-        float: left;
     }
     
-    
+    .index-btn-wrapper {
+        margin: 20px auto;
+    }
     
     .items {
         width: 95%;
@@ -385,6 +386,10 @@ td {
     
     #color {
         width: 200px;
+    }
+    
+    #driver {
+        margin-top: 0.5em;
     }
     
     table {
@@ -401,8 +406,14 @@ td {
         margin: 0 auto;
     }
     
+    th {
+        padding-top: 20px;
+        width: 95%;
+    }
+    
     td {
         padding-left: 50px;
+        width: 100%;
     }
     
     .footer-logo {
