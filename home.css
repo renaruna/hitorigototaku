@@ -348,9 +348,17 @@ td {
     .slide-wrapper {
         width: 550px;
     }
+    
+    footer {
+        width: 100%;
+    }
 }
 
 @media (max-width: 599px) {
+    .top {
+        padding: 0 20px;
+    }
+    
     .slide-wrapper {
         width: 100%;
     }
@@ -360,17 +368,46 @@ td {
         height: auto;
     }
     
-    table th, table td {
-        width: 90%; /* テーブルの見出しの横幅を指定する */
-        display: block; /* ブロックレベル要素化する */
+    .index-btn {
+        margin: 5px;
+        float: left;
     }
     
+    
+    
     .items {
-        width: 100%;
+        width: 95%;
     }
 
     .items h2 {
         padding-left: 10px;
     }
     
+    #color {
+        width: 200px;
+    }
+    
+    table {
+        width: 90%;
+    }
+    
+    p {
+        word-break: break-all;
+    }
+        
+    th, td {
+        display: block;
+        text-align: left;
+        margin: 0 auto;
+    }
+    
+    td {
+        padding-left: 50px;
+    }
+    
+    .footer-logo {
+        width: 90%;
+        height: auto;
+        padding-left: 0;
+    }
 }
