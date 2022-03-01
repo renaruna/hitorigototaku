@@ -14,30 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     
     <script type="text/javascript" src="character.js"></script>
-    <script type="text/javascript">
-        var userAgent = navigator.userAgent; // ユーザーエージェント判定
-    
-        //menu右から表示
-        var $home = $('.home-index');
-        var h = $(window).height();
-        var w = $(window).width();
-        var times = 0;
-
-        function menuRepeat(){
-            times++;
-            if (times % 2 !== 0) {
-                //奇数回クリックしたら、メニュー表示
-                    $home.animate({'marginRight':'380px'},500);
-                    $home.css("height",h);
-                if (userAgent.indexOf("iPhone") >= 0 || userAgent.indexOf("Android") >= 0) {
-                    $home.css("width",w);
-                }
-            } else {
-                //偶数回クリックしたら、メニュー非表示
-                    $home.animate({'marginRight':'0'},500);
-            }
-        }
-    </script>
+   
     <link rel="stylesheet" href="home.css">
   </head>
   <body>
@@ -49,7 +26,7 @@
             </div>
             <div class="menu">
                 <span class="fa fa-bars menu-icon" onclick="menuRepeat()"></span>
-
+                <span>
                 <div class="home-index">
                   <p><a href="home.html#i1">シナリオ一覧</a></p>
                     <p><a href="home.html#i2">キャラクター一覧</a></p>
