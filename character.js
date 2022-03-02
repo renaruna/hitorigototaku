@@ -4,21 +4,17 @@ $(function() {
     //menu右から表示
     var $home = $('.home-index');
     var h = $(window).height();
-    var w = $(window).width();
     
     $('.front').click(function() {
-        $('.front').hide();
-        $('.back').show();
+        $('.front').fadeToggle(250);//250ミリ秒で非表示
+        $('.back').fadeToggle(250);//250ミリ秒で表示
         $home.animate({'marginRight':'380px'},500);
         $home.css("height",h);
-        if (userAgent.indexOf("iPhone") >= 0 || userAgent.indexOf("Android") >= 0) {
-            $home.css("width",w);
-        }
     });
     
     $('.back').click(function() {
-        $('.back').hide();
-        $('.front').show();
+        $('.back').fadeToggle(250);//250ミリ秒で非表示
+        $('.front').fadeToggle(250);//250ミリ秒で表示
         $home.animate({'marginRight':0},500);
     });
     
