@@ -11,7 +11,7 @@ $(function() {
         $('.back').fadeToggle(250);//250ミリ秒で表示
         $home.animate({'marginRight':'380px'},500);
         $home.css("height",h);
-        if (window.matchMedia('(max-width: 599px)').matches) {
+        if (window.matchMedia('(max-width: 599px)').matches && w < 600) {
             $home.css("width",w);
         }
     });
