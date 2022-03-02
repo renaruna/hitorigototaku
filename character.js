@@ -9,14 +9,14 @@ $(function() {
     $('.front').click(function() {
         $('.front').hide();
         $('.back').show();
-        $home.animate({'marginLeft':'380px'},500);
+        $home.animate({'marginRight':'380px'},500);
         $home.css("height",h);
     });
     
     $('.back').click(function() {
         $('.back').hide();
         $('.front').show();
-        $home.animate({'marginLeft':0},500);
+        $home.animate({'marginRight':0},500);
     });
     
     //スライダー
