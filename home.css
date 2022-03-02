@@ -368,6 +368,10 @@ td {
         padding: 0 20px;
     }
     
+    .home-index {
+        width: 100vw;
+    }
+    
     .slide-wrapper {
         width: 100%;
     }
