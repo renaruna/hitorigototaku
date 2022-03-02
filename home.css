@@ -368,12 +368,16 @@ td {
         padding: 0 20px;
     }
     
-    .change-btn-wrapper {
-        width: 95%;
-    }
-    
     .slide-wrapper {
         width: 100%;
+    }
+    
+    .index-btn-wrapper {
+        margin: 20px auto;
+    }
+    
+    .index-btn {
+        margin: 5px;
     }
     
     .slide img {
@@ -381,13 +385,9 @@ td {
         height: auto;
     }
     
-    .index-btn {
-        margin: 5px;
-    }
-    
-    .index-btn-wrapper {
-        margin: 20px auto;
-    }
+    .change-btn-wrapper {
+        width: 95%;
+    }   
     
     .items {
         width: 95%;
