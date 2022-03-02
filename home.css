@@ -78,6 +78,11 @@ header {
     z-index: 99;
 }
 
+.back {
+    display: none;
+    color: #fffff0;
+}
+
 
 /*--------- メニュー ---------*/
 
