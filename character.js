@@ -5,22 +5,19 @@ $(function() {
     var $home = $('.home-index');
     var h = $(window).height();
     var w = $(window).width();
-    var times = 0;
     
-    function menuRepeat(){
-        times++;
-        if (times % 2 !== 0) {
-            //奇数回クリックしたら、メニュー表示
-                $home.animate({'marginRight':'380px'},500);
-                $home.css("height",h);
-            if (userAgent.indexOf("iPhone") >= 0 || userAgent.indexOf("Android") >= 0) {
-                $home.css("width",w);
-            }
-        } else {
-            //偶数回クリックしたら、メニュー非表示
-                $home.animate({'marginRight':'0'},500);
-        }
-    }
+    $('.front').click(function() {
+        $('.front').hide();
+        $('.back').show();
+        $home.animate({'marginLeft':'380px'},500);
+        $home.css("height",h);
+    });
+    
+    $('.back').click(function() {
+        $('.back').hide();
+        $('.front').show();
+        $home.animate({'marginLeft':0},500);
+    });
     
     //スライダー
     function toggleChangeBtn() {
