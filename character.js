@@ -4,12 +4,16 @@ $(function() {
     //menu右から表示
     var $home = $('.home-index');
     var h = $(window).height();
+    var w = $(window).width();
     
     $('.front').click(function() {
         $('.front').fadeToggle(250);//250ミリ秒で非表示
         $('.back').fadeToggle(250);//250ミリ秒で表示
         $home.animate({'marginRight':'380px'},500);
         $home.css("height",h);
+        if (window.matchMedia('(max-width: 599px)').matches) {
+            $home.css("width",w);
+        }
     });
     
     $('.back').click(function() {
