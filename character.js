@@ -11,6 +11,9 @@ $(function() {
         $('.back').show();
         $home.animate({'marginRight':'380px'},500);
         $home.css("height",h);
+        if (userAgent.indexOf("iPhone") >= 0 || userAgent.indexOf("Android") >= 0) {
+            $home.css("width",w);
+        }
     });
     
     $('.back').click(function() {
