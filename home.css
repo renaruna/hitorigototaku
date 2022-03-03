@@ -77,10 +77,14 @@ header {
 .home-index li{
     background-color: #999;
     color: white;
+    padding-top: 15px;
 }
 
-.li2 {
-    padding-left: 20px;
+.li2 li{
+    margin-left: 45px;
+    font-size: 0.95em;
+    list-style: disc;
+    padding: 0;
 }
 
 .home-index a {
