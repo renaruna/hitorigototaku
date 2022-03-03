@@ -21,15 +21,16 @@ body {
 /*--------- 全体設定 ---------*/
 
 /*--------- ヘッダー ---------*/
-.header-container {
-    width: 100%;
-    margin: 0 auto;
-}
-
 header {
     height: 190px;
     width: 100%;
     top: 0;
+}
+
+.header-container {
+    max-width: 2000px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .logo {
@@ -42,6 +43,15 @@ header {
     padding: 10px 0 0 20px;
 }
 /*--------- ヘッダー ---------*/
+
+/*--------- フッター ---------*/
+.footer-logo {
+    display: block;
+    margin: 0 auto;
+    height: 400px;
+    padding-left: 75px;
+}
+/*--------- フッター ---------*/
 
 /*--------- メニュー ---------*/
 .home-index {
@@ -82,18 +92,7 @@ header {
     display: none;
     color: #fffff0;
 }
-
-
 /*--------- メニュー ---------*/
-
-/*--------- フッター ---------*/
-.footer-logo {
-    display: block;
-    margin: 0 auto;
-    height: 400px;
-    padding-left: 75px;
-}
-/*--------- フッター ---------*/
 
 /*--------- ホーム ---------*/
 /* 上 */
@@ -145,7 +144,7 @@ header {
 }
 /*--------- ホーム ---------*/
 
-/*--------- 内容 ---------*/
+/*--------- キャラ、シナリオ、メンバー ---------*/
 /* タイトル */
 .top {
     z-index: 2;
@@ -186,7 +185,9 @@ header {
 #driver {
     margin-top: 50px;
 }
+/*--------- キャラ、シナリオ、メンバー ---------*/
 
+/*--------- 表 ---------*/
 table {
     width: 1000px;
     margin: 0 auto;
@@ -214,41 +215,9 @@ td {
     text-align: left;
     padding: 0 0 0 20px;
 }
-/*--------- 内容 ---------*/
+/*--------- 表 ---------*/
 
-/*--------- メンバー ---------*/
-.member table {
-    padding: 15px;
-}
-
-.member th {
-    padding-bottom: 10px;
-    font-size: 21px;
-}
-
-.member td {
-    font-size: 19px;
-}
-
-.managerColor p {
-    background-color: pink;
-    width: 300px;
-}
-
-.memberLeft {
-    text-align: right;
-    width: 500px;
-    padding-right: 20px;
-}
-
-.memberRight {
-    text-align: left;
-    width: 500px;
-    padding-left: 20px;
-}
-/*--------- メンバー ---------*/
-
-/*--------- ここからslider --------*/
+/*--------- キャラslider --------*/
 .slide-wrapper {
   text-align: center;
   width: 1000px;
@@ -316,7 +285,40 @@ td {
   color: #fff;
   background-color: #5cabd0;
 }
-/*-------  ここまでslider  --------*/
+/*-------  キャラslider  --------*/
+
+/*--------- メンバー ---------*/
+.member table {
+    padding: 15px;
+}
+
+.member th {
+    padding-bottom: 10px;
+    font-size: 21px;
+}
+
+.member td {
+    font-size: 19px;
+}
+
+.managerColor p {
+    background-color: pink;
+    width: 300px;
+}
+
+.memberLeft {
+    text-align: right;
+    width: 500px;
+    padding-right: 20px;
+}
+
+.memberRight {
+    text-align: left;
+    width: 500px;
+    padding-left: 20px;
+}
+/*--------- メンバー ---------*/
+
 
 @media (max-width: 1024px) {
     .top {
