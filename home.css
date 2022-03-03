@@ -67,6 +67,22 @@ header {
     font-size: 20px;
 }
 
+.home-index ul{
+    list-style: none;
+    background-color: #999;
+    padding: 0;
+    margin: 0;
+}
+
+.home-index li{
+    background-color: #999;
+    color: white;
+}
+
+.li2 {
+    padding: 20px;
+}
+
 .home-index p {
     background-color: #999;
     display: block;
