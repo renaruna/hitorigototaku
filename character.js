@@ -3,13 +3,14 @@ $(function() {
     
     //menu右から表示
     var $home = $('.home-index');
-    var h = $(window).height();
-    var w = $(window).width();
     
     $('.front').click(function() {
         $('.front').fadeToggle(250);//250ミリ秒で非表示
         $('.back').fadeToggle(250);//250ミリ秒で表示
-        $home.animate({'marginRight':'380px'},500);
+        $home.animate({'marginRight':'400px'},500);
+        
+        let h = $(window).height();
+        let w = $(window).width();
         $home.css("height",h);
         if (window.matchMedia('(max-width: 599px)').matches && w < 600) {
             $home.css("width",w);
