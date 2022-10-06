@@ -156,6 +156,25 @@ header {
     padding-bottom: 15px;
     margin: 15px;
 }
+
+.mems{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /*折り返しあり*/
+  justify-content: flex-start; /*左詰め*/
+  margin: 0 auto;
+}
+
+.mem {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+}
+
+.mem img {
+  width: 120px;
+  margin: 0;
+}
 /*--------- ホーム ---------*/
 
 /*--------- キャラ、シナリオ、メンバー ---------*/
