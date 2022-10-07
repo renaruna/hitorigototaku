@@ -480,4 +480,12 @@ td {
         height: auto;
         padding-left: 0;
     }
+    
+    .topper {
+        width: 100%;
+    }
+    
+    .lists {
+        width: 100%;
+    }
 }
