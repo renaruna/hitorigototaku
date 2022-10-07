@@ -27,8 +27,8 @@
                 <span class="fa fa-bars menu-icon back"></span>
                 <div class="home-index">
                   <ul>
-                    <li><a href="home.html#i1">シナリオ一覧</a></li>
-                    <li><a href="home.html#i2">キャラクター一覧</a></li>
+                    <li><a href="home.html#i1" class="li1">シナリオ一覧</a></li>
+                    <li><a href="home.html#i2" class="li1">キャラクター一覧</a></li>
                        <ul class="li2">
                           <li><a href="home.html#i2d">運転手</a></li>
                           <li><a href="home.html#i2m">管理人</a></li>
@@ -37,7 +37,7 @@
                           <li><a href="home.html#i2w">戦犯</a></li>
                           <li><a href="home.html#i2c">創造主</a></li>
                        </ul>
-                    <li><a href="home.html#i3">独り言卓メンバー一覧</a></li>
+                    <li><a href="home.html#i3" class="li1">独り言卓メンバー一覧</a></li>
                   </ul>
                 </div>
             </div>
@@ -47,13 +47,14 @@
     <!-- メンバー名 -->
     <div class="top">
         <h1 class="title">管理人</h1>
-        <p>コメント</p>
-        <p>Twitter：</p>
+        <p>Twitter：<a href="https://twitter.com/nefrit_john">https://twitter.com/nefrit_john</a></p>
+        <p>ふせったー：<a href="https://fusetter.com/u/nefrit_john">https://fusetter.com/u/nefrit_john</a></p>
+        <p>poipiku：<a href="https://poipiku.com/4908609/">https://poipiku.com/4908609/</a></p>
     </div>
 
     <!-- メンバーシート -->
     <div class="items member">
-        <p>画像</p>
+        <img id="manager-icon" src="">
         <table class="managerColor">
             <tr>
                 <th>メンバーカラー</th> 
@@ -62,19 +63,17 @@
                 </td>
             </tr>
         </table>
-        <table>
-            <tr>
-                <th>KPとして参加したシナリオ</th> <td><p id="scenarioKp"></p></td>
-            </tr>
-        </table>
-        <table class="sinachara">
-            <tr>
-                <th class="memberLeft">PLとして参加したシナリオ</th><th class="memberRight">キャラクター</th>
-            </tr>
-            <tr>
-                <td class="memberLeft" id="scenarioPl"></td> <td class="memberRight" id="charaPl"></td>
-            </tr>     
-        </table>
+        <p>コメント</p>
+        <div class="scenario-index">
+            <h4 class="memberLeft">KPとして参加したシナリオ</h4>
+            <div id="scenarioKp">
+            </div>
+        </div>
+        <div class="scenario-index">
+            <h4 class="memberLeft">PLとして参加したシナリオ</h4>
+            <div id="charaPl">
+            </div>
+        </div>
     </div>
 
     <footer>
