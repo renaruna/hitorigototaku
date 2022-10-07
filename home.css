@@ -187,7 +187,7 @@ header {
     z-index: 2;
     text-align: center;
     border-bottom: #F6F6E8 solid 12px;
-    padding: 0 250px;
+    padding: 0 250px 15px;
 }
 
 .title {
@@ -198,7 +198,6 @@ header {
 
 .top p {
     font-size: 16px;
-    margin: 0 0 15px 0;
 }
 
 /* 中身 */
@@ -325,17 +324,12 @@ td {
 /*-------  キャラslider  --------*/
 
 /*--------- メンバー ---------*/
-.member table {
-    padding: 15px;
+.member-url p {
+    padding: 0;
 }
 
-.member th {
-    padding-bottom: 10px;
-    font-size: 21px;
-}
-
-.member td {
-    font-size: 19px;
+.member {
+    text-align: center;
 }
 
 .managerColor p {
@@ -359,7 +353,7 @@ td {
 
 @media (max-width: 1024px) {
     .top {
-        padding: 0 50px;
+        padding: 0 50px 15px;
     }
 
     .title {
@@ -412,7 +406,7 @@ td {
     }
     
     .top {
-        padding: 0 20px;
+        padding: 0 20px 10px;
     }
     
     .title {
