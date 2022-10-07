@@ -337,6 +337,10 @@ td {
     width: 300px;
 }
 
+.manager-icon {
+    width: 80px;
+}
+
 .memberLeft {
     text-align: right;
     width: 500px;
