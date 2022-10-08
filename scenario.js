@@ -206,7 +206,7 @@ function display() {
         if (dataObject.creator) {
             creatorElement.innerHTML = '<a href="'+search(crArray, dataObject.creator)+'">'+dataObject.creator+'</a>：<a href="creator.html">創造主</a>';
         }
-        elsepcElement.textContent = dataObject.elsepc;
+        elsepcElement.innerHTML = change(dataObject.elsepc, "$", "<br>");
         miscElement.textContent = dataObject.misc;
         
     } else {
@@ -353,7 +353,7 @@ function display() {
         if (dataObject.creator) {
             creatorElement.innerHTML = '<a href="'+search(crArray, dataObject.creator)+'">'+dataObject.creator+'</a>：<a href="creator.html">創造主</a>';
         }
-        elsepcElement.textContent = dataObject.elsepc;
+        elsepcElement.innerHTML = change(dataObject.elsepc, "$", "<br>");
         miscElement.textContent = dataObject.misc;
         
     }
