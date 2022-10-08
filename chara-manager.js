@@ -27,6 +27,7 @@ const bossElement = document.getElementById('boss');
 const spiritualElement = document.getElementById('spiritual');
 const warcrimElement = document.getElementById('warcrim');
 const creatorElement = document.getElementById('creator');
+const heightElement = document.getElementById('height');
 const cArray = [];
 const sArray = [];
 const dataObject = {};
@@ -70,39 +71,40 @@ function convertArray(dataC, dataS) {
     }
     for (let i = 0; i < dataStringC.length; i++) {
         if(i == charaID) {
-            dataObject.name = cArray[i][1];
-            dataObject.hiraname = cArray[i][2];
-            dataObject.age = cArray[i][3];
-            dataObject.sex = cArray[i][4];
-            dataObject.job = cArray[i][5];
+            dataObject.name = cArray[i][3];
+            dataObject.hiraname = cArray[i][4];
+            dataObject.age = cArray[i][5];
+            dataObject.sex = cArray[i][6];
+            dataObject.job = cArray[i][7];
             dataObject.member = "管理人";
-            dataObject.color = cArray[i][6];
+	    dataObject.height = cArray[i][];
+            dataObject.color = cArray[i][8];
         
-            dataObject.hp = cArray[i][7];
-            dataObject.mp = cArray[i][8];
-            dataObject.san = cArray[i][9];
-            dataObject.db = cArray[i][10];
-            dataObject.str = cArray[i][11];
-            dataObject.con = cArray[i][12];
-            dataObject.pow = cArray[i][13];
-            dataObject.dex = cArray[i][14];
-            dataObject.app = cArray[i][15];
-            dataObject.siz = cArray[i][16];
-            dataObject.int = cArray[i][17];
-            dataObject.edu = cArray[i][18];
+            dataObject.hp = cArray[i][9];
+            dataObject.mp = cArray[i][10];
+            dataObject.san = cArray[i][11];
+            dataObject.db = cArray[i][12];
+            dataObject.str = cArray[i][13];
+            dataObject.con = cArray[i][14];
+            dataObject.pow = cArray[i][15];
+            dataObject.dex = cArray[i][16];
+            dataObject.app = cArray[i][17];
+            dataObject.siz = cArray[i][18];
+            dataObject.int = cArray[i][19];
+            dataObject.edu = cArray[i][20];
 
-            dataObject.skill = cArray[i][19];
-            dataObject.setting = cArray[i][20];
-            dataObject.scenario = cArray[i][21];
+            dataObject.skill = cArray[i][21];
+            dataObject.setting = cArray[i][22];
+            dataObject.scenario = cArray[i][23];
         
-            dataObject.driverCom = cArray[i][22];
-            dataObject.managerCom = cArray[i][23];
-            dataObject.bossCom = cArray[i][24];
-            dataObject.spiritualCom = cArray[i][25];
-            dataObject.warcrimCom = cArray[i][26];
-            dataObject.creatorCom = cArray[i][27];
+            dataObject.driverCom = cArray[i][24];
+            dataObject.managerCom = cArray[i][25];
+            dataObject.bossCom = cArray[i][26];
+            dataObject.spiritualCom = cArray[i][27];
+            dataObject.warcrimCom = cArray[i][28];
+            dataObject.creatorCom = cArray[i][29];
             
-            dataObject.maker = cArray[i][28];
+            dataObject.maker = cArray[i][30];
             break;
         }
     }
@@ -119,6 +121,7 @@ function display() {
     sexElement.textContent = dataObject.sex;
     jobElement.textContent = dataObject.job;
     memberElement.textContent = dataObject.member;
+    heightElement.textContent = dataObject.height+'cm';
     
     let colorBack;//背景色にキャラの色
     let colorMoji;//背景色にあった文字の色（#888か白）
@@ -174,7 +177,7 @@ function display() {
 function search(scenario) {
     for (let i=0; i < sArray.length; i++) {
         if (scenario.indexOf(sArray[i][1]) !== -1) {
-            return sArray[i][12];
+            return sArray[i][2];
         }
     }
     return "#";
@@ -197,4 +200,4 @@ function blackOrWhite(hexcolor) {
 	return ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) < 128 ) ? "white" : "#888" ;
 }
    
-getCsvData('character-index - manager.csv', 'website - scenario.csv');
+getCsvData('character-index - manager.csv', 'website - scenario-file.csv');
