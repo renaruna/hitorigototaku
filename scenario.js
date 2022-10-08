@@ -45,6 +45,7 @@ function getCsvDr(dataS, dataPathDr, dataPathMn, dataPathBs, dataPathSp, dataPat
     request.open('GET', dataPathDr, true);
     request.send();// HTTPリクエストの発行
 }
+
 function getCsvMn(dataS, dataDr, dataPathMn, dataPathBs, dataPathSp, dataPathWc, dataPathCr) {
     const request = new XMLHttpRequest();// HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
     
@@ -67,6 +68,7 @@ function getCsvBs(dataS, dataDr, dataMn, dataPathBs, dataPathSp, dataPathWc, dat
     request.open('GET', dataPathBs, true);
     request.send();// HTTPリクエストの発行
 }
+
 function getCsvSp(dataS, dataDr, dataMn, dataBs, dataPathSp, dataPathWc, dataPathCr) {
     const request = new XMLHttpRequest();// HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
     
@@ -78,6 +80,7 @@ function getCsvSp(dataS, dataDr, dataMn, dataBs, dataPathSp, dataPathWc, dataPat
     request.open('GET', dataPathSp, true);
     request.send();// HTTPリクエストの発行
 }
+
 function getCsvWc(dataS, dataDr, dataMn, dataBs, dataSp, dataPathWc, dataPathCr) {
     const request = new XMLHttpRequest();// HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
     
@@ -89,6 +92,7 @@ function getCsvWc(dataS, dataDr, dataMn, dataBs, dataSp, dataPathWc, dataPathCr)
     request.open('GET', dataPathWc, true);
     request.send();// HTTPリクエストの発行
 }
+
 function getCsvCr(dataS, dataDr, dataMn, dataBs, dataSp, dataWc, dataPathCr) {
     const request = new XMLHttpRequest();// HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
     
@@ -100,6 +104,7 @@ function getCsvCr(dataS, dataDr, dataMn, dataBs, dataSp, dataWc, dataPathCr) {
     request.open('GET', dataPathCr, true);
     request.send();// HTTPリクエストの発行
 }
+
 function convertArray(dataS, dataDr, dataMn, dataBs, dataSp, dataWc, dataCr) {
     const dataStringS = dataS.split('\n');// 改行を区切り文字として行を要素とした配列を生成
     const dataStringDr = dataDr.split('\n');
@@ -360,8 +365,8 @@ function display() {
 }
 function search(array, chara) {
     for (let i=0; i < array.length; i++) {
-        if (chara.indexOf(array[i][1]) !== -1) {
-            return array[i][29];
+        if (chara.indexOf(array[i][3]) !== -1) {
+            return array[i][1];
         }
     }
     return "#";
@@ -376,4 +381,4 @@ function change(text, a, b) {
   return text;
 }
    
-getCsvData('website - scenario.csv', 'character-index - driver.csv', 'character-index - manager.csv', 'character-index - boss.csv', 'character-index - spiritual.csv', 'character-index - warcrim.csv', 'character-index - creator.csv');
+getCsvData('website - scenario.csv', 'character-index - driver.csv', 'website - manager.csv', 'character-index - boss.csv', 'character-index - spiritual.csv', 'character-index - warcrim.csv', 'character-index - creator.csv');
