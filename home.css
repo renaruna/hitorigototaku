@@ -342,6 +342,7 @@ td {
 }
 .managerColor p {
     background-color: pink;
+    margin: 0;
 }
 
 #member-color {
