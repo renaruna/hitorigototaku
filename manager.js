@@ -1,6 +1,5 @@
 const kpElement = document.getElementById('scenarioKp');
-const plElement = document.getElementById('scenarioPl');
-const pl2Element = document.getElementById('charaPl');
+const plElement = document.getElementById('charaPl');
 const cArray = [];
 const sArray = [];
 
@@ -46,25 +45,27 @@ function convertArray(dataC, dataS) {
 }
 
 function display() {
-    let sKP = "";
+    let KP = "";
     let sPL = "";
     let cPL = "";
+    let htmlPL = "";
 
     for (let i = 1; i < sArray.length; i++) {
         if (sArray[i][5].indexOf("管理人") !== -1) {
             if (sArray[i][0]) {
-                sKP += '<a href="'+sArray[i][12]+'">'+change(sArray[i][1], "#", ",")+'</a><br>';
+                KP += '<a href="'+sArray[i][12]+'">'+change(sArray[i][1], "#", ",")+'</a><br>';
             }
         }
         if (sArray[i][7]) {
-            sPL += '<a href="'+sArray[i][12]+'">'+change(sArray[i][1], "#", ",")+'</a><br>';
-            cPL += '<a href="'+search(sArray[i][7])+'">'+sArray[i][7]+'</a><br>';
+            let j = search(sArray[i][7]);
+            sPL = '<a class="sPL" href="'+sArray[i][12]+'"><h4>'+change(sArray[i][1], "#", ",")+'</h4></a>';
+            cPL = '<a class="sPL" href="'+cArray[j][1]+'"><img src="'+cArray[i][2]+'"><p>'+sArray[i][7]+'</p></a>';
+            htmlPL += '<div class="htmlPL">'+sPL+cPL+'</div>';
         }
     }
 
     kpElement.innerHTML = sKP;
-    plElement.innerHTML = sPL;
-    pl2Element.innerHTML = cPL;
+    plElement.innerHTML = htmlPL;
 }
 
 function change(text, a, b) {
@@ -78,8 +79,8 @@ function change(text, a, b) {
 
 function search(chara) {
     for (let j=0; j < cArray.length; j++) {
-        if (chara.indexOf(cArray[j][1]) !== -1) {
-            return cArray[j][29];
+        if (chara.indexOf(cArray[j][3]) !== -1) {
+            return j;
         }
     }
     return "#";
