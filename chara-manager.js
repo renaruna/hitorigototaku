@@ -28,6 +28,7 @@ const spiritualElement = document.getElementById('spiritual');
 const warcrimElement = document.getElementById('warcrim');
 const creatorElement = document.getElementById('creator');
 const heightElement = document.getElementById('height');
+const iconElement = document.getElementById('icon');
 const cArray = [];
 const sArray = [];
 const dataObject = {};
@@ -71,13 +72,14 @@ function convertArray(dataC, dataS) {
     }
     for (let i = 0; i < dataStringC.length; i++) {
         if(i == charaID) {
+	    dataObject.icon = cArray[i][2];
             dataObject.name = cArray[i][3];
             dataObject.hiraname = cArray[i][4];
             dataObject.age = cArray[i][5];
             dataObject.sex = cArray[i][6];
             dataObject.job = cArray[i][7];
             dataObject.member = "管理人";
-	    dataObject.height = cArray[i][];
+	    dataObject.height = cArray[i][31];
             dataObject.color = cArray[i][8];
         
             dataObject.hp = cArray[i][9];
@@ -121,7 +123,8 @@ function display() {
     sexElement.textContent = dataObject.sex;
     jobElement.textContent = dataObject.job;
     memberElement.textContent = dataObject.member;
-    heightElement.textContent = dataObject.height+'cm';
+    heightElement.textContent = dataObject.height;
+    iconElement.setAttribute('src', dataObject.icon);
     
     let colorBack;//背景色にキャラの色
     let colorMoji;//背景色にあった文字の色（#888か白）
