@@ -78,7 +78,6 @@ function convertArray(dataC, dataS) {
             dataObject.age = cArray[i][5];
             dataObject.sex = cArray[i][6];
             dataObject.job = cArray[i][7];
-            dataObject.member = "管理人";
 	    dataObject.height = cArray[i][31];
             dataObject.color = cArray[i][8];
         
@@ -122,7 +121,7 @@ function display() {
     ageElement.textContent = dataObject.age;
     sexElement.textContent = dataObject.sex;
     jobElement.textContent = dataObject.job;
-    memberElement.textContent = dataObject.member;
+    memberElement.innerHTML = '<a href="manager.html">管理人</a>';
     heightElement.textContent = dataObject.height;
     iconElement.setAttribute('src', dataObject.icon);
     
