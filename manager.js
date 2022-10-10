@@ -46,8 +46,6 @@ function convertArray(dataC, dataS) {
 
 function display() {
     let KP = "";
-    let sPL = "";
-    let cPL = "";
     let htmlPL = "";
 
     for (let i = 1; i < sArray.length; i++) {
@@ -57,14 +55,17 @@ function display() {
             }
         }
         if (sArray[i][7]) {
+            let sPL = "";
+            let cPL = "";
             let j = search(sArray[i][7]);
+                        
             sPL = '<a class="sPL" href="'+sArray[i][12]+'"><h4>'+change(sArray[i][1], "#", ",")+'</h4></a>';
-            cPL = '<a class="sPL" href="'+cArray[j][1]+'"><img src="'+cArray[i][2]+'"><p>'+sArray[i][7]+'</p></a>';
+            cPL = '<a class="cPL" href="'+cArray[j][1]+'"><img src="'+cArray[j][2]+'"><p>'+sArray[i][7]+'</p></a>';
             htmlPL += '<div class="htmlPL">'+sPL+cPL+'</div>';
         }
     }
 
-    kpElement.innerHTML = sKP;
+    kpElement.innerHTML = KP;
     plElement.innerHTML = htmlPL;
 }
 
@@ -86,4 +87,4 @@ function search(chara) {
     return "#";
 }
 
-getCsvData('character-index - manager.csv', 'website - scenario.csv');
+getCsvData('website - manager.csv', 'website - scenario.csv');
