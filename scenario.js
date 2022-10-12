@@ -193,22 +193,22 @@ function display() {
         kpElement.innerHTML = kpHtml.slice(0, -7);
         
         //PC
-        if (dataObject.driver) {
+        if (dataObject.driver !== "") {
             driverElement.innerHTML = '<a href="'+search(drArray, dataObject.driver)+'">'+dataObject.driver+'</a>：<a href="driver.html">運転手</a>';
         }
-        if (dataObject.manager) {
+        if (dataObject.manager !== "") {
             managerElement.innerHTML = '<a href="'+search(mnArray, dataObject.manager)+'">'+dataObject.manager+'</a>：<a href="manager.html">管理人</a>';
         }
-        if (dataObject.boss) {
+        if (dataObject.boss !== "") {
             bossElement.innerHTML = '<a href="'+search(bsArray, dataObject.boss)+'">'+dataObject.boss+'</a>：<a href="boss.html">上司</a>';
         }
-        if (dataObject.spiritual) {
+        if (dataObject.spiritual !== "") {
             spiritualElement.innerHTML = '<a href="'+search(spArray, dataObject.spiritual)+'">'+dataObject.spiritual+'</a>：<a href="spiritual.html">スピリチュアルな存在。</a>';
         }
-        if (dataObject.warcrim) {
+        if (dataObject.warcrim !== "") {
             warcrimElement.innerHTML = '<a href="'+search(wcArray, dataObject.warcrim)+'">'+dataObject.warcrim+'</a>：<a href="warcrim.html">戦犯</a>';
         }
-        if (dataObject.creator) {
+        if (dataObject.creator !== "") {
             creatorElement.innerHTML = '<a href="'+search(crArray, dataObject.creator)+'">'+dataObject.creator+'</a>：<a href="creator.html">創造主</a>';
         }
         elsepcElement.innerHTML = change(dataObject.elsepc, "$", "<br>");
@@ -271,22 +271,22 @@ function display() {
             let spiritual = "";
             let warcrim = "";
             let creator = "";
-            if (dataObject.driver) {
+            if (dataObject.driver !== "") {
                 driver = '<p><a href="'+search(drArray, dataObject.driver)+'">'+dataObject.driver+'</a>：<a href="driver.html">運転手</a></p>';
             }
-            if (dataObject.manager) {
+            if (dataObject.manager !== "") {
                 manager = '<p><a href="'+search(mnArray, dataObject.manager)+'">'+dataObject.manager+'</a>：<a href="manager.html">管理人</a></p>';
             }
-            if (dataObject.boss) {
+            if (dataObject.boss !== "") {
                 boss = '<p><a href="'+search(bsArray, dataObject.boss)+'">'+dataObject.boss+'</a>：<a href="boss.html">上司</a></p>';
             }
-            if (dataObject.spiritual) {
+            if (dataObject.spiritual !== "") {
                 spiritual = '<p><a href="'+search(spArray, dataObject.spiritual)+'">'+dataObject.spiritual+'</a>：<a href="spiritual.html">スピリチュアルな存在。</a></p>';
             }
-            if (dataObject.warcrim) {
+            if (dataObject.warcrim !== "") {
                 warcrim = '<p><a href="'+search(wcArray, dataObject.warcrim)+'">'+dataObject.warcrim+'</a>：<a href="warcrim.html">戦犯</a></p>';
             }
-            if (dataObject.creator) {
+            if (dataObject.creator !== "") {
                 creator = '<p><a href="'+search(crArray, dataObject.creator)+'">'+dataObject.creator+'</a>：<a href="creator.html">創造主</a></p>';
             }
             //HTML
@@ -340,22 +340,22 @@ function display() {
         kpElement.innerHTML = kpHtml.slice(0, -7);
         
         //PC
-        if (dataObject.driver) {
+        if (dataObject.driver !== "") {
             driverElement.innerHTML = '<a href="'+search(drArray, dataObject.driver)+'">'+dataObject.driver+'</a>：<a href="driver.html">運転手</a>';
         }
-        if (dataObject.manager) {
+        if (dataObject.manager !== "") {
             managerElement.innerHTML = '<a href="'+search(mnArray, dataObject.manager)+'">'+dataObject.manager+'</a>：<a href="manager.html">管理人</a>';
         }
-        if (dataObject.boss) {
+        if (dataObject.boss !== "") {
             bossElement.innerHTML = '<a href="'+search(bsArray, dataObject.boss)+'">'+dataObject.boss+'</a>：<a href="boss.html">上司</a>';
         }
-        if (dataObject.spiritual) {
+        if (dataObject.spiritual !== "") {
             spiritualElement.innerHTML = '<a href="'+search(spArray, dataObject.spiritual)+'">'+dataObject.spiritual+'</a>：<a href="spiritual.html">スピリチュアルな存在。</a>';
         }
-        if (dataObject.warcrim) {
+        if (dataObject.warcrim !== "") {
             warcrimElement.innerHTML = '<a href="'+search(wcArray, dataObject.warcrim)+'">'+dataObject.warcrim+'</a>：<a href="warcrim.html">戦犯</a>';
         }
-        if (dataObject.creator) {
+        if (dataObject.creator !== "") {
             creatorElement.innerHTML = '<a href="'+search(crArray, dataObject.creator)+'">'+dataObject.creator+'</a>：<a href="creator.html">創造主</a>';
         }
         elsepcElement.innerHTML = change(dataObject.elsepc, "$", "<br>");
