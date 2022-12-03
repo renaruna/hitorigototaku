@@ -164,7 +164,7 @@ function display() {
         text[i] = search(array[i]);
     }
     for (i = 0; i < array.length; i++) {
-        html += '<a href="'+text[i]+'">'+array[i]+'</a><br>';
+        html += '<a href="../../'+text[i]+'">'+array[i]+'</a><br>';
     }
     scenarioElement.innerHTML = html;
     
@@ -202,4 +202,4 @@ function blackOrWhite(hexcolor) {
 	return ( ( ( (r * 299) + (g * 587) + (b * 114) ) / 1000 ) < 128 ) ? "white" : "#888" ;
 }
    
-getCsvData('character-index - manager.csv', 'website - scenario-file.csv');
+getCsvData('character-index - manager.csv', '../../website - scenario-file.csv');
