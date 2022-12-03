@@ -51,7 +51,7 @@ function display() {
     for (let i = 1; i < sArray.length; i++) {
         if ((sArray[i][5]).indexOf("管理人") !== -1) {
             if (sArray[i][0]) {
-                kp += '<a href="'+sArray[i][12]+'">'+change(sArray[i][1], "#", ",")+'</a><br>';
+                kp += '<a href="../scenario/'+sArray[i][12]+'">'+change(sArray[i][1], "#", ",")+'</a><br>';
             }
         }
         if (sArray[i][7]) {
@@ -59,8 +59,8 @@ function display() {
             let cPL = "";
             let j = search(sArray[i][7]);
                         
-            sPL = '<a class="sPL" href="'+sArray[i][12]+'"><h4>'+change(sArray[i][1], "#", ",")+'</h4></a>';
-            cPL = '<a class="cPL" href="'+cArray[j][1]+'"><img src="'+cArray[j][2]+'"><p>'+sArray[i][7]+'</p></a>';
+            sPL = '<a class="sPL" href="../scenario/'+sArray[i][12]+'"><h4>'+change(sArray[i][1], "#", ",")+'</h4></a>';
+            cPL = '<a class="cPL" href="../'+cArray[j][1]+'"><img src="../character/manager/'+cArray[j][2]+'"><p>'+sArray[i][7]+'</p></a>';
             htmlPL += '<div class="htmlPL">'+sPL+cPL+'</div>';
         }
     }
@@ -87,4 +87,4 @@ function search(chara) {
     return "#";
 }
 
-getCsvData('website - manager.csv', 'website - scenario.csv');
+getCsvData('../website - manager.csv', '../scenario/website - scenario.csv');
