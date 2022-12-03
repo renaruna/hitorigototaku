@@ -1,80 +1,44 @@
-0.ID,1.filename,2.icon,3.name
-1,Nakagawa_Ganesh.html,,中川　ガネッシュ
-2,Timo_Nieminen.html,,Timo・Nieminen
-3,Luca_Cassini.html,,Luca・Cassini
-4,Noelu_Kettunen.html,,Noelu・Kettunen
-5,Ogami_Sasa.html,,大神　ササ
-6,Hanatsuki_Kairi.html,,花月　快理
-7,Hanatsuki_Mei.html,,花月　メイ
-8,Hanatsuki_Yahazu.html,,花月　矢筈
-9,Araragi_Tsubame.html,,櫟　燕
-10,Tsuzura_Kitora.html,,葛　喜虎
-11,Yanoki_Saburo.html,,矢ノ木　候
-12,Towata_Eriya.html,,兎卯綿　エリヤ
-13,Nakagawa_Kumar.html,,中川　クマール
-14,Tokiwana_Awaki.html,,刻別菜　淡黄
-15,Yasuno_Sadame.html,,安野　運
-16,Inuhashi_Ikoma_ex.html,,狗橋　憩麻（旧世界線）
-17,Inuhashi_Ikoma_now.html,,狗橋　憩麻（現世界線）
-18,Rindo_Noar.html,,凛堂　ノア
-19,Dylan_Al_Salif.html,,Dylan・Al＝Salif
-20,Shiramine_Mekura.html,,知峰　愛夢
-21,Yaomote.html,,闇表
-22,Fujisato_Terumi.html,,藤里　照美
-23,Swee_Lumi_Campanella.html,,Swee•Lumi•Campanella
-24,Hatoba_Tessen.html,,鳩羽　鉄船
-25,Arau_Kaho.html,,新牛　香蒲
-26,Onizuka_Rokuto.html,,鬼塚　鹿灯
-27,Kurikoshi_Isaku.html,,繰越　糸雀
-28,Yamanetsuki_Jyozetu.html,,山寝月　醸舌
-29,Suzukage_Chiyori.html,,鈴影　蝶依
-30,Safukuji_Ai.html,,朝福路　藍韋
-31,Sakakiichi_Moku.html,,榊一　木
-32,An.html,,あん
-33,Shishi_Akiha.html,,哂雫　瑛葉
-34,Miyakushi_Syaorin.html,,三薬梔　小鈴
-35,Yakai_Ryo.html,,夜届　涼
-36,Kirisaki_Rensui.html,,霧先　恋水
-37,Kawamura.html,,カワムラ
-38,Sato_Itsu.html,,佐藤　佚
-39,Clark_S_Riebe.html,,Clark•S•Riebe
-40,Aran_Seiji.html,,阿蘭　清視
-41,Iru.html,,イル
-42,Tsuga_Senjyu.html,,津荷　専寿
-43,,,
-44,,,魚人
-45,,,
-46,,,
-47,,,
-48,,,
-49,,,
-50,,,
-51,,,
-52,,,
-53,,,
-54,,,
-55,,,
-56,,,
-57,,,
-58,,,
-59,,,
-60,,,
-61,,,
-62,,,
-63,,,
-64,,,
-65,,,
-66,,,
-67,,,
-68,,,
-69,,,
-70,,,
-71,,,
-72,,,
-73,,,
-74,,,
-75,,,
-76,,,
-77,,,
-78,,,
-79,,,
+0.ID,1.filename,2.name
+1,character/boss/Nakagawa_Ganesh.html,中川　ガネッシュ
+2,character/boss/Timo_Nieminen.html,Timo・Nieminen
+3,character/boss/Luca_Cassini.html,Luca・Cassini
+4,character/boss/Noelu_Kettunen.html,Noelu・Kettunen
+5,character/boss/Ogami_Sasa.html,大神　ササ
+6,character/boss/Hanatsuki_Kairi.html,花月　快理
+7,character/boss/Hanatsuki_Mei.html,花月　メイ
+8,character/boss/Hanatsuki_Yahazu.html,花月　矢筈
+9,character/boss/Araragi_Tsubame.html,櫟　燕
+10,character/boss/Tsuzura_Kitora.html,葛　喜虎
+11,character/boss/Yanoki_Saburo.html,矢ノ木　候
+12,character/boss/Towata_Eriya.html,兎卯綿　エリヤ
+13,character/boss/Nakagawa_Kumar.html,中川　クマール
+14,character/boss/Tokiwana_Awaki.html,刻別菜　淡黄
+15,character/boss/Yasuno_Sadame.html,安野　運
+16,character/boss/Inuhashi_Ikoma_ex.html,狗橋　憩麻（旧世界線）
+17,character/boss/Inuhashi_Ikoma_now.html,狗橋　憩麻（現世界線）
+18,character/boss/Rindo_Noar.html,凛堂　ノア
+19,character/boss/Dylan_Al_Salif.html,Dylan・Al＝Salif
+20,character/boss/Shiramine_Mekura.html,知峰　愛夢
+21,character/boss/Yaomote.html,闇表
+22,character/boss/Fujisato_Terumi.html,藤里　照美
+23,character/boss/Swee_Lumi_Campanella.html,Swee•Lumi•Campanella
+24,character/boss/Hatoba_Tessen.html,鳩羽　鉄船
+25,character/boss/Arau_Kaho.html,新牛　香蒲
+26,character/boss/Onizuka_Rokuto.html,鬼塚　鹿灯
+27,character/boss/Kurikoshi_Isaku.html,繰越　糸雀
+28,character/boss/Yamanetsuki_Jyozetu.html,山寝月　醸舌
+29,character/boss/Suzukage_Chiyori.html,鈴影　蝶依
+30,character/boss/Safukuji_Ai.html,朝福路　藍韋
+31,character/boss/Sakakiichi_Moku.html,榊一　木
+32,character/boss/An.html,あん
+33,character/boss/Shishi_Akiha.html,哂雫　瑛葉
+34,character/boss/Miyakushi_Syaorin.html,三薬梔　小鈴
+35,character/boss/Yakai_Ryo.html,夜届　涼
+36,character/boss/Kirisaki_Rensui.html,霧先　恋水
+37,character/boss/Kawamura.html,カワムラ
+38,character/boss/Sato_Itsu.html,佐藤　佚
+39,character/boss/Clark_S_Riebe.html,Clark•S•Riebe
+40,character/boss/Aran_Seiji.html,阿蘭　清視
+41,character/boss/Iru.html,イル
+42,character/boss/Tsuga_Senjyu.html,津荷　専寿
+44,character/boss/,魚人

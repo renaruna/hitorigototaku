@@ -1,82 +1,45 @@
-0.ID,1.filename,2.icon,3.name
-1,Margherita_Stephanie.html,,マルゲリータ・ステファニー
-2,Mamiya_Issei.html,,麻宮一星
-3,Hisui_Tomato.html,,翡翠苫斗
-4,Tsukioka_Midori.html,,月岡水鳥
-5,Oribe_Kotaro.html,,織部浩太郎
-6,Aoba.html,,青葉
-7,Yuzuki_Mahiro.html,,柚木希宙
-8,Hitani_Kotori.html,,日谷琴璃(久留間琴璃)
-9,Kyujyo_Momoka.html,,九条桃桜
-10,Hashita_Hotaru.html,,端慕蛍
-11,Hatsuka_Akane.html,,初鹿明鏡
-12,Umiwatari_Riku.html,,海渡陸
-13,Togaishi_Kenshi.html,,砥石柑柿
-14,Hayanagi_Moko.html,,葉柳萌燃
-15,Chateau_Caron_Berliaall.html,,Chateau Caron Berliaall
-16,Dogura.html,,独羅
-17,Azuki_Kokona.html,,小豆ここな
-18,Himaki_Toru.html,,火巻透(神島爪白)
-19,Sakaguchi_Miku.html,,坂口未来
-20,Memoire_Bizet.html,,Mēmoire Bizet
-21,Ikariga_Nekohachi.html,,クロシェット/錨狩猫八
-22,Hinata_Mizuki.html,,雛田満希
-23,Kogane_Akatsuki.html,,琥鋼朱序
-24,Kumori_Sora.html,,久森想良
-25,Minase_Rio.html,,水瀬理央
-26,Kanjya_Ichika.html,,神蛇苺花
-27,KOotsuuro_Haru.html,,榾洞葉琉
-28,Olivia_Lee.html,,olivia lee
-29,Yagi_Azami.html,,八木 薊
-30,Moyashi.html,,モヤシ
-31,Hiwa_Kareno.html,,鶸 枯乃
-32,Takamine_Rei.html,,高峰 羚
-33,Hyoga_Samu.html,,氷冴 作務
-34,Ochikata_Ayashi.html,,彼方 愛子
-35,Takahashi_Kakeru.html,,高橋 架
-36,Shirona.html,,白菜
-37,Roku.html,,ろく
-38,Sakisaka_Iroha.html,,向坂 彩晴
-39,,,
-40,Cathy.html,,キャシー
-41,Ninomae_Koshi.html,,一孤愛
-42,,,金野未有
-43,Nika_Averina.html,,Ника・Аверина
-44,Aizo_Sumomo.html,,愛蔵李
-45,Hanatsuka_Kaori.html,,花塚かおり
-46,,,
-47,,,
-48,,,
-49,,,
-50,,,
-51,,,
-52,,,
-53,,,
-54,,,
-55,,,
-56,,,
-57,,,
-58,,,
-59,,,
-60,,,
-61,,,
-62,,,
-63,,,
-64,,,
-65,,,
-66,,,
-67,,,
-68,,,
-69,,,
-70,,,
-71,,,
-72,,,
-73,,,
-74,,,
-75,,,
-76,,,
-77,,,
-78,,,
-79,,,
-80,,,
-81,,,
+0.ID,1.filename,2.name
+1,character/spiritual/Margherita_Stephanie.html,マルゲリータ・ステファニー
+2,character/spiritual/Mamiya_Issei.html,麻宮一星
+3,character/spiritual/Hisui_Tomato.html,翡翠苫斗
+4,character/spiritual/Tsukioka_Midori.html,月岡水鳥
+5,character/spiritual/Oribe_Kotaro.html,織部浩太郎
+6,character/spiritual/Aoba.html,青葉
+7,character/spiritual/Yuzuki_Mahiro.html,柚木希宙
+8,character/spiritual/Hitani_Kotori.html,日谷琴璃(久留間琴璃)
+9,character/spiritual/Kyujyo_Momoka.html,九条桃桜
+10,character/spiritual/Hashita_Hotaru.html,端慕蛍
+11,character/spiritual/Hatsuka_Akane.html,初鹿明鏡
+12,character/spiritual/Umiwatari_Riku.html,海渡陸
+13,character/spiritual/Togaishi_Kenshi.html,砥石柑柿
+14,character/spiritual/Hayanagi_Moko.html,葉柳萌燃
+15,character/spiritual/Chateau_Caron_Berliaall.html,Chateau Caron Berliaall
+16,character/spiritual/Dogura.html,独羅
+17,character/spiritual/Azuki_Kokona.html,小豆ここな
+18,character/spiritual/Himaki_Toru.html,火巻透(神島爪白)
+19,character/spiritual/Sakaguchi_Miku.html,坂口未来
+20,character/spiritual/Memoire_Bizet.html,Mēmoire Bizet
+21,character/spiritual/Ikariga_Nekohachi.html,クロシェット/錨狩猫八
+22,character/spiritual/Hinata_Mizuki.html,雛田満希
+23,character/spiritual/Kogane_Akatsuki.html,琥鋼朱序
+24,character/spiritual/Kumori_Sora.html,久森想良
+25,character/spiritual/Minase_Rio.html,水瀬理央
+26,character/spiritual/Kanjya_Ichika.html,神蛇苺花
+27,character/spiritual/KOotsuuro_Haru.html,榾洞葉琉
+28,character/spiritual/Olivia_Lee.html,olivia lee
+29,character/spiritual/Yagi_Azami.html,八木 薊
+30,character/spiritual/Moyashi.html,モヤシ
+31,character/spiritual/Hiwa_Kareno.html,鶸 枯乃
+32,character/spiritual/Takamine_Rei.html,高峰 羚
+33,character/spiritual/Hyoga_Samu.html,氷冴 作務
+34,character/spiritual/Ochikata_Ayashi.html,彼方 愛子
+35,character/spiritual/Takahashi_Kakeru.html,高橋 架
+36,character/spiritual/Shirona.html,白菜
+37,character/spiritual/Roku.html,ろく
+38,character/spiritual/Sakisaka_Iroha.html,向坂 彩晴
+40,character/spiritual/Cathy.html,キャシー
+41,character/spiritual/Ninomae_Koshi.html,一孤愛
+42,character/spiritual/,金野未有
+43,character/spiritual/Nika_Averina.html,Ника・Аверина
+44,character/spiritual/Aizo_Sumomo.html,愛蔵李
+45,character/spiritual/Hanatsuka_Kaori.html,花塚かおり
