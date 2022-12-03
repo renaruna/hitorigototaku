@@ -381,4 +381,4 @@ function change(text, a, b) {
   return text;
 }
    
-getCsvData('website - scenario.csv', 'website - driver.csv', 'website - manager.csv', 'website - boss.csv', 'character-index - spiritual.csv', 'website - warcrim.csv', 'website - creator.csv');
+getCsvData('../website - scenario.csv', '../website - driver.csv', '../website - manager.csv', '../website - boss.csv', '../character-index - spiritual.csv', '../website - warcrim.csv', '../website - creator.csv');
