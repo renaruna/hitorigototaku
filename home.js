@@ -130,7 +130,7 @@ function display() {
     // キャラクター一覧（運転手）
 
     let mnHtml = "";
-    for (let i = 0; i < mnArray.length; i++) {
+    for (let i = 1; i < mnArray.length; i++) {
         let link = mnArray[i][1];
         let name = mnArray[i][2];
         mnHtml +='<div class="chara"><a href="'+link+'"><img src="character/manager/'+name+'.png"><p>'+name+'</p></a></div>';
