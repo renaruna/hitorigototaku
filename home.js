@@ -128,12 +128,7 @@ function convertArray(dataS, dataDr, dataMn, dataBs, dataSp, dataWc, dataCr) {
 
 function display() {
     // キャラクター一覧（運転手）
-    //<div class="mem">
-    //    <a href="リンク.html">
-    //        <img src="画像.png">
-    //        <p>キャラ名</p>
-    //    </a>
-    //</div>
+
     let mnHtml = "";
     for (let i = 0; i < mnArray.length; i++) {
         let link = mnArray[i][1];
@@ -163,4 +158,4 @@ function change(text, a, b) {
   return text;
 }
    
-getCsvData('website - scenario.csv', 'website - driver.csv', 'website - manager.csv', 'website - boss.csv', 'website - spiritual.csv', 'website - warcrim.csv', 'website - creator.csv');
+getCsvData('website - scenario-file.csv', 'website - driver.csv', 'website - manager.csv', 'website - boss.csv', 'website - spiritual.csv', 'website - warcrim.csv', 'website - creator.csv');
