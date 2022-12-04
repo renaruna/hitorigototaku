@@ -161,6 +161,21 @@ header {
     margin: 15px;
 }
 
+.chara {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+
+.chara img {
+  width: 100px;
+  margin: 0;
+}
+
+.chara p {
+    margin: 0;
+}
+
 .mems{
   display: flex;
   flex-direction: row;
