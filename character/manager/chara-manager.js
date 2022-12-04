@@ -28,7 +28,6 @@ const spiritualElement = document.getElementById('spiritual');
 const warcrimElement = document.getElementById('warcrim');
 const creatorElement = document.getElementById('creator');
 const heightElement = document.getElementById('height');
-const iconElement = document.getElementById('icon');
 const cArray = [];
 const sArray = [];
 const dataObject = {};
@@ -72,40 +71,39 @@ function convertArray(dataC, dataS) {
     }
     for (let i = 0; i < dataStringC.length; i++) {
         if(i == charaID) {
-	    dataObject.icon = cArray[i][2];
-            dataObject.name = cArray[i][3];
-            dataObject.hiraname = cArray[i][4];
-            dataObject.age = cArray[i][5];
-            dataObject.sex = cArray[i][6];
-            dataObject.job = cArray[i][7];
-	    dataObject.height = cArray[i][31];
-            dataObject.color = cArray[i][8];
+            dataObject.name = cArray[i][2];
+            dataObject.hiraname = cArray[i][3];
+            dataObject.age = cArray[i][4];
+            dataObject.sex = cArray[i][5];
+            dataObject.job = cArray[i][6];
+	    dataObject.height = cArray[i][30];
+            dataObject.color = cArray[i][7];
         
-            dataObject.hp = cArray[i][9];
-            dataObject.mp = cArray[i][10];
-            dataObject.san = cArray[i][11];
-            dataObject.db = cArray[i][12];
-            dataObject.str = cArray[i][13];
-            dataObject.con = cArray[i][14];
-            dataObject.pow = cArray[i][15];
-            dataObject.dex = cArray[i][16];
-            dataObject.app = cArray[i][17];
-            dataObject.siz = cArray[i][18];
-            dataObject.int = cArray[i][19];
-            dataObject.edu = cArray[i][20];
+            dataObject.hp = cArray[i][8];
+            dataObject.mp = cArray[i][9];
+            dataObject.san = cArray[i][10];
+            dataObject.db = cArray[i][11];
+            dataObject.str = cArray[i][12];
+            dataObject.con = cArray[i][13];
+            dataObject.pow = cArray[i][14];
+            dataObject.dex = cArray[i][15];
+            dataObject.app = cArray[i][16];
+            dataObject.siz = cArray[i][17];
+            dataObject.int = cArray[i][18];
+            dataObject.edu = cArray[i][19];
 
-            dataObject.skill = cArray[i][21];
-            dataObject.setting = cArray[i][22];
-            dataObject.scenario = cArray[i][23];
+            dataObject.skill = cArray[i][20];
+            dataObject.setting = cArray[i][21];
+            dataObject.scenario = cArray[i][22];
         
-            dataObject.driverCom = cArray[i][24];
-            dataObject.managerCom = cArray[i][25];
-            dataObject.bossCom = cArray[i][26];
-            dataObject.spiritualCom = cArray[i][27];
-            dataObject.warcrimCom = cArray[i][28];
-            dataObject.creatorCom = cArray[i][29];
+            dataObject.driverCom = cArray[i][23];
+            dataObject.managerCom = cArray[i][24];
+            dataObject.bossCom = cArray[i][25];
+            dataObject.spiritualCom = cArray[i][26];
+            dataObject.warcrimCom = cArray[i][27];
+            dataObject.creatorCom = cArray[i][28];
             
-            dataObject.maker = cArray[i][30];
+            dataObject.maker = cArray[i][29];
             break;
         }
     }
