@@ -194,22 +194,22 @@ function display() {
         
         //PC
         if (dataObject.driver !== "") {
-            driverElement.innerHTML = '<a href="../'+search(drArray, dataObject.driver)+'">'+dataObject.driver+'</a>：<a href="driver.html">運転手</a>';
+            driverElement.innerHTML = '<a href="../'+search(drArray, dataObject.driver)+'">'+dataObject.driver+'</a>：<a href="../member/driver.html">運転手</a>';
         }
         if (dataObject.manager !== "") {
-            managerElement.innerHTML = '<a href="../'+search(mnArray, dataObject.manager)+'">'+dataObject.manager+'</a>：<a href="manager.html">管理人</a>';
+            managerElement.innerHTML = '<a href="../'+search(mnArray, dataObject.manager)+'">'+dataObject.manager+'</a>：<a href="../member/manager.html">管理人</a>';
         }
         if (dataObject.boss !== "") {
-            bossElement.innerHTML = '<a href="../'+search(bsArray, dataObject.boss)+'">'+dataObject.boss+'</a>：<a href="boss.html">上司</a>';
+            bossElement.innerHTML = '<a href="../'+search(bsArray, dataObject.boss)+'">'+dataObject.boss+'</a>：<a href="../member/boss.html">上司</a>';
         }
         if (dataObject.spiritual !== "") {
-            spiritualElement.innerHTML = '<a href="../'+search(spArray, dataObject.spiritual)+'">'+dataObject.spiritual+'</a>：<a href="spiritual.html">スピリチュアルな存在。</a>';
+            spiritualElement.innerHTML = '<a href="../'+search(spArray, dataObject.spiritual)+'">'+dataObject.spiritual+'</a>：<a href="../member/spiritual.html">スピリチュアルな存在。</a>';
         }
         if (dataObject.warcrim !== "") {
-            warcrimElement.innerHTML = '<a href="../'+search(wcArray, dataObject.warcrim)+'">'+dataObject.warcrim+'</a>：<a href="warcrim.html">戦犯</a>';
+            warcrimElement.innerHTML = '<a href="../'+search(wcArray, dataObject.warcrim)+'">'+dataObject.warcrim+'</a>：<a href="../member/warcrim.html">戦犯</a>';
         }
         if (dataObject.creator !== "") {
-            creatorElement.innerHTML = '<a href="../'+search(crArray, dataObject.creator)+'">'+dataObject.creator+'</a>：<a href="creator.html">創造主</a>';
+            creatorElement.innerHTML = '<a href="../'+search(crArray, dataObject.creator)+'">'+dataObject.creator+'</a>：<a href="../member/creator.html">創造主</a>';
         }
         elsepcElement.innerHTML = change(dataObject.elsepc, "$", "<br>");
         miscElement.textContent = dataObject.misc;
@@ -272,22 +272,22 @@ function display() {
             let warcrim = "";
             let creator = "";
             if (dataObject.driver !== "") {
-                driver = '<p><a href="../'+search(drArray, dataObject.driver)+'">'+dataObject.driver+'</a>：<a href="driver.html">運転手</a></p>';
+                driver = '<p><a href="../'+search(drArray, dataObject.driver)+'">'+dataObject.driver+'</a>：<a href="../member/driver.html">運転手</a></p>';
             }
             if (dataObject.manager !== "") {
-                manager = '<p><a href="../'+search(mnArray, dataObject.manager)+'">'+dataObject.manager+'</a>：<a href="manager.html">管理人</a></p>';
+                manager = '<p><a href="../'+search(mnArray, dataObject.manager)+'">'+dataObject.manager+'</a>：<a href="../member/manager.html">管理人</a></p>';
             }
             if (dataObject.boss !== "") {
-                boss = '<p><a href="../'+search(bsArray, dataObject.boss)+'">'+dataObject.boss+'</a>：<a href="boss.html">上司</a></p>';
+                boss = '<p><a href="../'+search(bsArray, dataObject.boss)+'">'+dataObject.boss+'</a>：<a href="../member/boss.html">上司</a></p>';
             }
             if (dataObject.spiritual !== "") {
-                spiritual = '<p><a href="../'+search(spArray, dataObject.spiritual)+'">'+dataObject.spiritual+'</a>：<a href="spiritual.html">スピリチュアルな存在。</a></p>';
+                spiritual = '<p><a href="../'+search(spArray, dataObject.spiritual)+'">'+dataObject.spiritual+'</a>：<a href="../member/spiritual.html">スピリチュアルな存在。</a></p>';
             }
             if (dataObject.warcrim !== "") {
-                warcrim = '<p><a href="../'+search(wcArray, dataObject.warcrim)+'">'+dataObject.warcrim+'</a>：<a href="warcrim.html">戦犯</a></p>';
+                warcrim = '<p><a href="../'+search(wcArray, dataObject.warcrim)+'">'+dataObject.warcrim+'</a>：<a href="../member/warcrim.html">戦犯</a></p>';
             }
             if (dataObject.creator !== "") {
-                creator = '<p><a href="../'+search(crArray, dataObject.creator)+'">'+dataObject.creator+'</a>：<a href="creator.html">創造主</a></p>';
+                creator = '<p><a href="../'+search(crArray, dataObject.creator)+'">'+dataObject.creator+'</a>：<a href="../member/creator.html">創造主</a></p>';
             }
             //HTML
             text += '<h2>第'+(j+1)+'陣</h2></div><div class="item"><table><tr><th>プレイした日付</th><td><p>'+dataObject.date+'</p></td></tr><tr><th>プレイ時間</th><td><p>'+dataObject.time+'</p></td></tr><tr><th>KP</th><td><p>'+kpHtml+'</p></td></tr><tr><th>CAST</th><td><div><p>PC</p>'+driver+manager+boss+spiritual+warcrim+creator+'<p>'+dataObject.elsepc+'</p></div></td></tr></table></div><div>';
@@ -341,22 +341,22 @@ function display() {
         
         //PC
         if (dataObject.driver !== "") {
-            driverElement.innerHTML = '<a href="../'+search(drArray, dataObject.driver)+'">'+dataObject.driver+'</a>：<a href="driver.html">運転手</a>';
+            driverElement.innerHTML = '<a href="../'+search(drArray, dataObject.driver)+'">'+dataObject.driver+'</a>：<a href="../member/driver.html">運転手</a>';
         }
         if (dataObject.manager !== "") {
-            managerElement.innerHTML = '<a href="../'+search(mnArray, dataObject.manager)+'">'+dataObject.manager+'</a>：<a href="manager.html">管理人</a>';
+            managerElement.innerHTML = '<a href="../'+search(mnArray, dataObject.manager)+'">'+dataObject.manager+'</a>：<a href="../member/manager.html">管理人</a>';
         }
         if (dataObject.boss !== "") {
-            bossElement.innerHTML = '<a href="../'+search(bsArray, dataObject.boss)+'">'+dataObject.boss+'</a>：<a href="boss.html">上司</a>';
+            bossElement.innerHTML = '<a href="../'+search(bsArray, dataObject.boss)+'">'+dataObject.boss+'</a>：<a href="../member/boss.html">上司</a>';
         }
         if (dataObject.spiritual !== "") {
-            spiritualElement.innerHTML = '<a href="../'+search(spArray, dataObject.spiritual)+'">'+dataObject.spiritual+'</a>：<a href="spiritual.html">スピリチュアルな存在。</a>';
+            spiritualElement.innerHTML = '<a href="../'+search(spArray, dataObject.spiritual)+'">'+dataObject.spiritual+'</a>：<a href="../member/spiritual.html">スピリチュアルな存在。</a>';
         }
         if (dataObject.warcrim !== "") {
-            warcrimElement.innerHTML = '<a href="../'+search(wcArray, dataObject.warcrim)+'">'+dataObject.warcrim+'</a>：<a href="warcrim.html">戦犯</a>';
+            warcrimElement.innerHTML = '<a href="../'+search(wcArray, dataObject.warcrim)+'">'+dataObject.warcrim+'</a>：<a href="../member/warcrim.html">戦犯</a>';
         }
         if (dataObject.creator !== "") {
-            creatorElement.innerHTML = '<a href="../'+search(crArray, dataObject.creator)+'">'+dataObject.creator+'</a>：<a href="creator.html">創造主</a>';
+            creatorElement.innerHTML = '<a href="../'+search(crArray, dataObject.creator)+'">'+dataObject.creator+'</a>：<a href="../member/creator.html">創造主</a>';
         }
         elsepcElement.innerHTML = change(dataObject.elsepc, "$", "<br>");
         miscElement.textContent = dataObject.misc;
