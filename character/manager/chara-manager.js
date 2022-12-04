@@ -119,7 +119,7 @@ function display() {
     ageElement.textContent = dataObject.age;
     sexElement.textContent = dataObject.sex;
     jobElement.textContent = dataObject.job;
-    memberElement.innerHTML = '<a href="manager.html">管理人</a>';
+    memberElement.innerHTML = '<a href="../../member/manager.html">管理人</a>';
     heightElement.textContent = dataObject.height;
     iconElement.setAttribute('src', dataObject.icon);
     
