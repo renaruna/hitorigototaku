@@ -235,6 +235,7 @@ function display() {
             dataObject.warcrim = sArray[scenarioID + j][10];
             dataObject.creator = sArray[scenarioID + j][11];
             dataObject.elsepc = sArray[scenarioID + j][13];
+            dataObject.misc = sArray[scenarioID + j][16];
             
             //KP
             let memberKP;
@@ -290,7 +291,7 @@ function display() {
                 creator = '<p><a href="../'+search(crArray, dataObject.creator)+'">'+dataObject.creator+'</a>：<a href="../member/creator.html">創造主</a></p>';
             }
             //HTML
-            text += '<h2>第'+(j+1)+'陣</h2></div><div class="item"><table><tr><th>プレイした日付</th><td><p>'+dataObject.date+'</p></td></tr><tr><th>プレイ時間</th><td><p>'+dataObject.time+'</p></td></tr><tr><th>KP</th><td><p>'+kpHtml+'</p></td></tr><tr><th>CAST</th><td><div><p>PC</p>'+driver+manager+boss+spiritual+warcrim+creator+'<p>'+dataObject.elsepc+'</p></div></td></tr></table></div><div>';
+            text += '<h2>第'+(j+1)+'陣</h2></div><div class="item"><table><tr><th>プレイした日付</th><td><p>'+dataObject.date+'</p></td></tr><tr><th>プレイ時間</th><td><p>'+dataObject.time+'</p></td></tr><tr><th>KP</th><td><p>'+kpHtml+'</p></td></tr><tr><th>CAST</th><td><div><p>PC</p>'+driver+manager+boss+spiritual+warcrim+creator+'<p>'+dataObject.elsepc+'</p></div></td></tr><tr><th>その他</th><td><p>'+dataObject.misc+'</p></td></tr></table></div><div>';
         }
         text += '<h2>第'+jin+'陣</h2>';
         jinElement.innerHTML = text;
