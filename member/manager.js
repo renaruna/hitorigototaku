@@ -79,12 +79,8 @@ function change(text, a, b) {
 }
 
 function search(chara) {
-    for (let j=0; j < cArray.length; j++) {
-        if (chara.indexOf(cArray[j][2]) !== -1) {
-            return j;
-        }
-    }
-    return "#";
+
+    return cArray[1][2];
 }
 
 getCsvData('../website - manager.csv', '../scenario/website - scenario.csv');
