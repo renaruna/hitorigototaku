@@ -366,7 +366,7 @@ function display() {
 }
 function search(array, chara) {
 
-    return typeof chara;
+    return typeof array[1][2];
 }
 
 function change(text, a, b) {
