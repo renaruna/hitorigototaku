@@ -370,7 +370,7 @@ function search(array, chara) {
             return array[i][1];
         }
     }
-    return "#";
+    return chara;
 }
 
 function change(text, a, b) {
