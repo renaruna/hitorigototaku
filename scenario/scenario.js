@@ -366,11 +366,11 @@ function display() {
 }
 function search(array, chara) {
     for (let i=0; i < array.length; i++) {
-        if (chara.indexOf(array[i][2]) !== -1) {
+        if (chara.indexOf(array[i][2]) == 0) {
             return array[i][1];
         }
     }
-    return array[1][1];
+    return array[1][2];
 }
 
 function change(text, a, b) {
