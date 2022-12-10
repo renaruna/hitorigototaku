@@ -121,7 +121,6 @@ function display() {
     jobElement.textContent = dataObject.job;
     memberElement.innerHTML = '<a href="../../member/manager.html">管理人</a>';
     heightElement.textContent = dataObject.height;
-    iconElement.setAttribute('src', dataObject.icon);
     
     let colorBack;//背景色にキャラの色
     let colorMoji;//背景色にあった文字の色（#888か白）
