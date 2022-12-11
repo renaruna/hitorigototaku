@@ -162,17 +162,36 @@ header {
 }
 
 .chara {
-  display: inline-block;
+  border: 1px solid #fffff0;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px;
+  transition: .2s;
   width: 100px;
   text-align: center;
 }
 
+.chara:hover {
+    border: 3px solid #ffe9d9;
+    background: #FFE9D9;
+}
+
+.chara a {
+    background-color: transparent;
+}
+    
+.chara a:hover {
+    text-decoration: none;
+}
+
 .chara img {
+  background-color: transparent;
   width: 100px;
   margin: 0;
 }
 
 .chara p {
+    background-color: transparent;
     margin: 0;
     font-size: 15px;
 }
