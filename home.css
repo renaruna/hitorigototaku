@@ -234,6 +234,10 @@ header {
   background-color: transparent;
 }
 
+.mem a:hover {
+  text-decoration: none;
+}
+
 /*--------- ホーム ---------*/
 
 /*--------- キャラ、シナリオ、メンバー共通 ---------*/
