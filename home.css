@@ -168,6 +168,7 @@ header {
   margin: 5px;
   transition: .2s;
   width: 130px;
+    height: 180px;
   text-align: center;
   background-color: #F9F4DF;
 }
@@ -189,6 +190,7 @@ header {
   background-color: transparent;
   width: 100px;
   margin: 0;
+  background-image: url("../../transparent.png");
 }
 
 .chara p {
