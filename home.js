@@ -4,6 +4,7 @@ const bossElement = document.getElementById('i2b-list');
 const spiritualElement = document.getElementById('i2s-list');
 const warcrimElement = document.getElementById('i2w-list');
 const creatorElement = document.getElementById('i2c-list');
+const scenarioElement = document.getElementById('scenario-list');
 const drArray = [];
 const mnArray = [];
 const bsArray = [];
@@ -133,6 +134,17 @@ function convertArray(dataS, dataDr, dataMn, dataBs, dataSp, dataWc, dataCr) {
 }
 
 function display() {
+    // シナリオ一覧
+    
+    let scenario = "<ul>";
+    for (let i = 1; i < sArray.length; i++) {
+        let link = sArray[i][2];
+        let name = sArray[i][1];
+        scenario +='<li><a href="'+link+'">'+name+'</a></li>';
+    }
+    scenarioElement.innerHTML = scenario + "</ul>";
+    
+    
     // キャラクター一覧
 
     let drHtml = "";
