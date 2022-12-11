@@ -1,4 +1,9 @@
 const driverElement = document.getElementById('i2d-list');
+const managerElement = document.getElementById('i2m-list');
+const bossElement = document.getElementById('i2b-list');
+const spiritualElement = document.getElementById('i2s-list');
+const warcrimElement = document.getElementById('i2w-list');
+const creatorElement = document.getElementById('i2c-list');
 const drArray = [];
 const mnArray = [];
 const bsArray = [];
@@ -43,6 +48,7 @@ function getCsvMn(dataS, dataDr, dataPathMn, dataPathBs, dataPathSp, dataPathWc,
     request.open('GET', dataPathMn, true);
     request.send();// HTTPリクエストの発行
 }
+
 function getCsvBs(dataS, dataDr, dataMn, dataPathBs, dataPathSp, dataPathWc, dataPathCr) {
     const request = new XMLHttpRequest();// HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
     
@@ -127,16 +133,55 @@ function convertArray(dataS, dataDr, dataMn, dataBs, dataSp, dataWc, dataCr) {
 }
 
 function display() {
-    // キャラクター一覧（運転手）
+    // キャラクター一覧
 
+    let drHtml = "";
+    for (let i = 1; i < drArray.length; i++) {
+        let link = drArray[i][1];
+        let name = drArray[i][2];
+        drHtml +='<div class="chara"><a href="'+link+'"><img src="character/driver/'+name+'.png"><p>'+name+'</p></a></div>';
+    }
+    driverElement.innerHTML = drHtml;
+    
     let mnHtml = "";
     for (let i = 1; i < mnArray.length; i++) {
         let link = mnArray[i][1];
         let name = mnArray[i][2];
         mnHtml +='<div class="chara"><a href="'+link+'"><img src="character/manager/'+name+'.png"><p>'+name+'</p></a></div>';
     }
-
-    driverElement.innerHTML = mnHtml;
+    managerElement.innerHTML = mnHtml;
+    
+    let bsHtml = "";
+    for (let i = 1; i < bsArray.length; i++) {
+        let link = bsArray[i][1];
+        let name = bsArray[i][2];
+        bsHtml +='<div class="chara"><a href="'+link+'"><img src="character/boss/'+name+'.png"><p>'+name+'</p></a></div>';
+    }
+    bossElement.innerHTML = bsHtml;
+    
+    let spHtml = "";
+    for (let i = 1; i < spArray.length; i++) {
+        let link = spArray[i][1];
+        let name = spArray[i][2];
+        spHtml +='<div class="chara"><a href="'+link+'"><img src="character/spiritual/'+name+'.png"><p>'+name+'</p></a></div>';
+    }
+    spiritualElement.innerHTML = spHtml;
+    
+    let wcHtml = "";
+    for (let i = 1; i < wcArray.length; i++) {
+        let link = wcArray[i][1];
+        let name = wcArray[i][2];
+        wcHtml +='<div class="chara"><a href="'+link+'"><img src="character/warcrim/'+name+'.png"><p>'+name+'</p></a></div>';
+    }
+    warcrimElement.innerHTML = wcHtml;
+    
+    let crHtml = "";
+    for (let i = 1; i < crArray.length; i++) {
+        let link = crArray[i][1];
+        let name = crArray[i][2];
+        crHtml +='<div class="chara"><a href="'+link+'"><img src="character/creator/'+name+'.png"><p>'+name+'</p></a></div>';
+    }
+    creatorElement.innerHTML = crHtml;
 
 }
 
