@@ -60,7 +60,7 @@ function display() {
             let j = search(sArray[i][7]);
                         
             sPL = '<a class="sPL" href="../scenario/'+sArray[i][12]+'"><h4>'+change(sArray[i][1], "#", ",")+'</h4></a>';
-            cPL = '<a class="cPL" href="../'+cArray[j][1]+'"><img src="../character/manager/'+cArray[j][2]+'"><p>'+sArray[i][7]+'</p></a>';
+            cPL = '<a class="cPL" href="../'+cArray[j][1]+'"><img src="../character/manager/'+cArray[j][2]+'.png"><p>'+sArray[i][7]+'</p></a>';
             htmlPL += '<div class="htmlPL">'+sPL+cPL+'</div>';
         }
     }
@@ -79,8 +79,12 @@ function change(text, a, b) {
 }
 
 function search(chara) {
-
-    return cArray[1][2];
+    for (let j=0; j < cArray.length; j++) {
+        if (chara.indexOf(cArray[j][2]) !== -1) {
+            return j;
+        }
+    }
+    return "#";
 }
 
 getCsvData('../website - manager.csv', '../scenario/website - scenario.csv');
