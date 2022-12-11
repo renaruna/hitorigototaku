@@ -140,7 +140,7 @@ function display() {
     for (let i = 1; i < sArray.length; i++) {
         let link = sArray[i][2];
         let name = sArray[i][1];
-        scenario +='<li><a href="'+link+'">'+name+'</a></li>';
+        scenario +='<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
     }
     scenarioElement.innerHTML = scenario + "</ul>";
     
