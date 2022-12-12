@@ -47,13 +47,18 @@ function convertArray(dataC, dataS) {
 function display() {
     let kp = "";
     let htmlPL = "";
-
+    
     for (let i = 1; i < sArray.length; i++) {
-        if ((sArray[i][5]).indexOf("管理人") !== -1) {
-            if (sArray[i][0]) {
+        let kpName = sArray[i][5];
+        if (kpName && sArray[i][0]) { // kp欄になにかしら入ってる　かつ　IDがある。
+            if (kpName.indexOf("管理人") !== -1) {
                 kp += '<a href="../scenario/'+sArray[i][12]+'">'+change(sArray[i][1], "#", ",")+'</a><br>';
             }
         }
+    }
+    kpElement.innerHTML = kp;
+
+    for (let i = 1; i < sArray.length; i++) {
         if (sArray[i][7]) {
             let sPL = "";
             let cPL = "";
@@ -65,7 +70,7 @@ function display() {
         }
     }
 
-    kpElement.innerHTML = kp;
+    
     plElement.innerHTML = htmlPL;
 }
 
