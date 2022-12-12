@@ -151,7 +151,11 @@ function display() {
     for (let i = 1; i < drArray.length; i++) {
         let link = drArray[i][1];
         let name = drArray[i][2];
-        drHtml +='<div class="chara"><a href="'+link+'"><img src="character/driver/'+name+'.png"><p>'+name+'</p></a></div>';
+        if (drArray[i][3]) {
+            drHtml +='<div class="chara"><a href="'+link+'"><img src="../transparent.png"><p>'+name+'</p></a></div>';
+        } else {
+            drHtml +='<div class="chara"><a href="'+link+'"><img src="character/driver/'+name+'.png"><p>'+name+'</p></a></div>';
+        }        
     }
     driverElement.innerHTML = drHtml;
     
@@ -159,7 +163,11 @@ function display() {
     for (let i = 1; i < mnArray.length; i++) {
         let link = mnArray[i][1];
         let name = mnArray[i][2];
-        mnHtml +='<div class="chara"><a href="'+link+'"><img src="character/manager/'+name+'.png"><p>'+name+'</p></a></div>';
+        if (mnArray[i][3]) {
+            mnHtml +='<div class="chara"><a href="'+link+'"><img src="../transparent.png"><p>'+name+'</p></a></div>';
+        } else {
+            mnHtml +='<div class="chara"><a href="'+link+'"><img src="character/manager/'+name+'.png"><p>'+name+'</p></a></div>';
+        }
     }
     managerElement.innerHTML = mnHtml;
     
@@ -167,7 +175,11 @@ function display() {
     for (let i = 1; i < bsArray.length; i++) {
         let link = bsArray[i][1];
         let name = bsArray[i][2];
-        bsHtml +='<div class="chara"><a href="'+link+'"><img src="character/boss/'+name+'.png"><p>'+name+'</p></a></div>';
+        if (bsArray[i][3]) {
+            bsHtml +='<div class="chara"><a href="'+link+'"><img src="../transparent.png"><p>'+name+'</p></a></div>';
+        } else {
+            bsHtml +='<div class="chara"><a href="'+link+'"><img src="character/boss/'+name+'.png"><p>'+name+'</p></a></div>';
+        }        
     }
     bossElement.innerHTML = bsHtml;
     
@@ -175,7 +187,11 @@ function display() {
     for (let i = 1; i < spArray.length; i++) {
         let link = spArray[i][1];
         let name = spArray[i][2];
-        spHtml +='<div class="chara"><a href="'+link+'"><img src="character/spiritual/'+name+'.png"><p>'+name+'</p></a></div>';
+        if (spArray[i][3]) {
+            spHtml +='<div class="chara"><a href="'+link+'"><img src="../transparent.png"><p>'+name+'</p></a></div>';
+        } else {
+            spHtml +='<div class="chara"><a href="'+link+'"><img src="character/spiritual/'+name+'.png"><p>'+name+'</p></a></div>';
+        }
     }
     spiritualElement.innerHTML = spHtml;
     
@@ -183,7 +199,11 @@ function display() {
     for (let i = 1; i < wcArray.length; i++) {
         let link = wcArray[i][1];
         let name = wcArray[i][2];
-        wcHtml +='<div class="chara"><a href="'+link+'"><img src="character/warcrim/'+name+'.png"><p>'+name+'</p></a></div>';
+        if (wcArray[i][3]) {
+            wcHtml +='<div class="chara"><a href="'+link+'"><img src="../transparent.png"><p>'+name+'</p></a></div>';
+        } else {
+            wcHtml +='<div class="chara"><a href="'+link+'"><img src="character/warcrim/'+name+'.png"><p>'+name+'</p></a></div>';
+        }
     }
     warcrimElement.innerHTML = wcHtml;
     
@@ -191,7 +211,11 @@ function display() {
     for (let i = 1; i < crArray.length; i++) {
         let link = crArray[i][1];
         let name = crArray[i][2];
-        crHtml +='<div class="chara"><a href="'+link+'"><img src="character/creator/'+name+'.png"><p>'+name+'</p></a></div>';
+        if (crArray[i][3]) {
+            crHtml +='<div class="chara"><a href="'+link+'"><img src="../transparent.png"><p>'+name+'</p></a></div>';
+        } else {
+            crHtml +='<div class="chara"><a href="'+link+'"><img src="character/creator/'+name+'.png"><p>'+name+'</p></a></div>';
+        }
     }
     creatorElement.innerHTML = crHtml;
 
