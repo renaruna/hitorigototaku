@@ -45,9 +45,7 @@ function convertArray(dataC, dataS) {
 }
 
 function display() {
-    let kp = "";
-    let htmlPL = "";
-    
+    let kp = "";   
     for (let i = 1; i < sArray.length; i++) {
         let kpName = sArray[i][5];
         if (kpName && sArray[i][0]) { // kp欄になにかしら入ってる　かつ　IDがある。
@@ -58,6 +56,7 @@ function display() {
     }
     kpElement.innerHTML = kp;
 
+    let htmlPL = "";
     for (let i = 1; i < sArray.length; i++) {
         if (sArray[i][7]) {
             let sPL = "";
@@ -89,7 +88,7 @@ function search(chara) {
             return j;
         }
     }
-    return "#";
+    return 0;
 }
 
 getCsvData('../website - manager.csv', '../scenario/website - scenario.csv');
