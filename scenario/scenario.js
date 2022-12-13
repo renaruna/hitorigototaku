@@ -221,7 +221,7 @@ function display() {
         makerElement.textContent = sArray[scenarioID][2];//maker
         urlElement.innerHTML =  '<a href="'+sArray[scenarioID][3]+'" >'+sArray[scenarioID][3]+'</a>';//url,page
         
-        let text = "";
+        let text = "<div>";
         for (let j = 0; j < jin - 1; j++) {
             let dataObject = {};
             dataObject.id = sArray[scenarioID + j][0];
