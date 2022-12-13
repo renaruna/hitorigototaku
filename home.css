@@ -80,6 +80,14 @@ header {
     padding-top: 15px;
 }
 
+.menu-li1 {
+    margin-left: 20px;
+}
+
+.menu-li1 li {
+  display: inline-block;
+}
+
 .menu-li2 li{
     margin-left: 45px;
     font-size: 0.95em;
