@@ -23,6 +23,14 @@ $(function() {
         $home.animate({'marginRight':0},500);
     });
     
+    //ページ内リンクへスクロール
+    $('#page-link a[href*="#"]').click(function() { //全てのページ内リンクに適用させたい場合はa[href*="#"]のみでもOK
+        var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
+        var pos = $(elmHash).offset().top;	//idの上部の距離を取得
+        $('body,html').animate({scrollTop: pos}, 500); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
+        return false;
+    });
+    
     //スライダー
     function toggleChangeBtn() {
         var slideIndex = $('.slide').index($('.active'));
@@ -39,23 +47,23 @@ $(function() {
         }
     }
   
-  //下の番号を押して写真変える
-  $('.index-btn').click(function() {
-    $('.active').removeClass('active');
-    var clickedIndex = $('.index-btn').index($(this));
-    $('.slide').eq(clickedIndex).addClass('active');
-    toggleChangeBtn();
-  });
+    //下の番号を押して写真変える
+    $('.index-btn').click(function() {
+      $('.active').removeClass('active');
+      var clickedIndex = $('.index-btn').index($(this));
+      $('.slide').eq(clickedIndex).addClass('active');
+      toggleChangeBtn();
+    });
   
-  //前へ次へボタン押して写真変える
-  $('.change-btn').click(function() {
-    var $displaySlide = $('.active');
-    $displaySlide.removeClass('active');
-    if ($(this).hasClass('next-btn')) {
-      $displaySlide.next().addClass('active');
-    } else {
-      $displaySlide.prev().addClass('active');
-    }
-    toggleChangeBtn();
-  });
+    //前へ次へボタン押して写真変える
+    $('.change-btn').click(function() {
+      var $displaySlide = $('.active');
+      $displaySlide.removeClass('active');
+      if ($(this).hasClass('next-btn')) {
+        $displaySlide.next().addClass('active');
+      } else {
+        $displaySlide.prev().addClass('active');
+      }
+      toggleChangeBtn();
+    });
 });
