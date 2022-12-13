@@ -172,7 +172,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap; /*折り返しあり*/
     justify-content: flex-start; /*左詰め*/
-    margin: 0 auto;
+    margin: 0 auto 1.5em;
     align-items: flex-end;
 }
 
@@ -181,7 +181,7 @@ header {
 }
 
 .btn {
-    border: 5px solid #F9F4DF;
+    border: 5px solid #F2E4B1;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
@@ -190,7 +190,7 @@ header {
 }
 
 .btn:hover {
-    background-color: #F9F4DF;
+    background-color: #F2E4B1;
 }
 
 .btn p {
@@ -209,12 +209,12 @@ header {
 }
 
 .pl-btn a {
-  width: 80px;
+  width: 100px;
   margin: 10px;
 }
 
 .kome {
-  padding: 5px;
+  padding: 0 6px;
   margin: 0;
 }
 
