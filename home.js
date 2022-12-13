@@ -5,16 +5,16 @@ const spiritualElement = document.getElementById('i2s-list');
 const warcrimElement = document.getElementById('i2w-list');
 const creatorElement = document.getElementById('i2c-list');
 const scenarioElement = document.getElementById('scenario-list');
-const aElement = document.getElementById('i1-a');
-const kElement = document.getElementById('i1-k');
-const sElement = document.getElementById('i1-s');
-const tElement = document.getElementById('i1-t');
-const nElement = document.getElementById('i1-n');
-const hElement = document.getElementById('i1-h');
-const mElement = document.getElementById('i1-m');
-const yElement = document.getElementById('i1-y');
-const rElement = document.getElementById('i1-r');
-const wElement = document.getElementById('i1-w');
+const aElement = document.getElementById('i1-a-list');
+const kElement = document.getElementById('i1-k-list');
+const sElement = document.getElementById('i1-s-list');
+const tElement = document.getElementById('i1-t-list');
+const nElement = document.getElementById('i1-n-list');
+const hElement = document.getElementById('i1-h-list');
+const mElement = document.getElementById('i1-m-list');
+const yElement = document.getElementById('i1-y-list');
+const rElement = document.getElementById('i1-r-list');
+const wElement = document.getElementById('i1-w-list');
 
 const drArray = [];
 const mnArray = [];
@@ -161,25 +161,25 @@ function display() {
         let link = sArray[i][2];
         let kasira = sArray[i][3];
         
-        if (kasira.indexOf("あ") || kasira.indexOf("い") || kasira.indexOf("う") || kasira.indexOf("え") || kasira.indexOf("お")) {
+        if (kasira.indexOf("あ") == 0 || kasira.indexOf("い") == 0 || kasira.indexOf("う") == 0 || kasira.indexOf("え") == 0 || kasira.indexOf("お") == 0) {
             scenario_a += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
-        } else if (kasira.indexOf("か") || kasira.indexOf("き") || kasira.indexOf("く") || kasira.indexOf("け") || kasira.indexOf("こ")) {
+        } else if (kasira.indexOf("か") == 0 || kasira.indexOf("き") == 0 || kasira.indexOf("く") == 0 || kasira.indexOf("け") == 0 || kasira.indexOf("こ") == 0) {
             scenario_k += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
-        } else if (kasira.indexOf("さ") || kasira.indexOf("し") || kasira.indexOf("す") || kasira.indexOf("せ") || kasira.indexOf("そ")) {
+        } else if (kasira.indexOf("さ") == 0 || kasira.indexOf("し") == 0 || kasira.indexOf("す") == 0 || kasira.indexOf("せ") == 0 || kasira.indexOf("そ") == 0) {
             scenario_s += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
-        } else if (kasira.indexOf("た") || kasira.indexOf("ち") || kasira.indexOf("つ") || kasira.indexOf("て") || kasira.indexOf("と")) {
+        } else if (kasira.indexOf("た") == 0 || kasira.indexOf("ち") == 0 || kasira.indexOf("つ") == 0 || kasira.indexOf("て") == 0 || kasira.indexOf("と") == 0) {
             scenario_t += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
-        } else if (kasira.indexOf("な") || kasira.indexOf("に") || kasira.indexOf("ぬ") || kasira.indexOf("ね") || kasira.indexOf("の")) {
+        } else if (kasira.indexOf("な") == 0 || kasira.indexOf("に") == 0 || kasira.indexOf("ぬ") == 0 || kasira.indexOf("ね") == 0 || kasira.indexOf("の") == 0) {
             scenario_n += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
-        } else if (kasira.indexOf("は") || kasira.indexOf("ひ") || kasira.indexOf("ふ") || kasira.indexOf("へ") || kasira.indexOf("ほ")) {
+        } else if (kasira.indexOf("は") == 0 || kasira.indexOf("ひ") == 0 || kasira.indexOf("ふ") == 0 || kasira.indexOf("へ") == 0 || kasira.indexOf("ほ") == 0) {
             scenario_h += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
-        } else if (kasira.indexOf("ま") || kasira.indexOf("み") || kasira.indexOf("む") || kasira.indexOf("め") || kasira.indexOf("も")) {
+        } else if (kasira.indexOf("ま") == 0 || kasira.indexOf("み") == 0 || kasira.indexOf("む") == 0 || kasira.indexOf("め") == 0 || kasira.indexOf("も") == 0) {
             scenario_m += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
-        } else if (kasira.indexOf("や") || kasira.indexOf("ゆ") || kasira.indexOf("よ")) {
+        } else if (kasira.indexOf("や") == 0 || kasira.indexOf("ゆ") == 0 || kasira.indexOf("よ") == 0) {
             scenario_y += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
-        } else if (kasira.indexOf("ら") || kasira.indexOf("り") || kasira.indexOf("る") || kasira.indexOf("れ") || kasira.indexOf("ろ")) {
+        } else if (kasira.indexOf("ら") == 0 || kasira.indexOf("り") == 0 || kasira.indexOf("る") == 0 || kasira.indexOf("れ") == 0 || kasira.indexOf("ろ") == 0) {
             scenario_r += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
-        } else if (kasira.indexOf("わ") || kasira.indexOf("を") || kasira.indexOf("ん")) {
+        } else if (kasira.indexOf("わ") == 0 || kasira.indexOf("を") == 0 || kasira.indexOf("ん") == 0) {
             scenario_w += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
         }
     }
