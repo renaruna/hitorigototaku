@@ -1,0 +1,47 @@
+/*--------- メンバー ---------*/
+.member-url p {
+    padding: 0;
+}
+
+.member {
+    text-align: center;
+}
+
+.member p {
+    margin: 0;
+}
+
+.comment {
+    padding-top: 1.5em;
+}
+
+.memberLeft {
+    padding: 40px 0 8px 0;
+    margin: 0;
+}
+
+.managerColor p {
+    background-color: pink;
+    margin: 0;
+}
+
+#member-color {
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.member-icon {
+    width: 80px;
+}
+
+.htmlPL {
+    width: 200px;
+}
+
+.cPL img {
+    height: 70px;
+}
+
+/*--------- メンバー ---------*/
+
