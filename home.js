@@ -5,6 +5,17 @@ const spiritualElement = document.getElementById('i2s-list');
 const warcrimElement = document.getElementById('i2w-list');
 const creatorElement = document.getElementById('i2c-list');
 const scenarioElement = document.getElementById('scenario-list');
+const aElement = document.getElementById('i1-a');
+const kElement = document.getElementById('i1-k');
+const sElement = document.getElementById('i1-s');
+const tElement = document.getElementById('i1-t');
+const nElement = document.getElementById('i1-n');
+const hElement = document.getElementById('i1-h');
+const mElement = document.getElementById('i1-m');
+const yElement = document.getElementById('i1-y');
+const rElement = document.getElementById('i1-r');
+const wElement = document.getElementById('i1-w');
+
 const drArray = [];
 const mnArray = [];
 const bsArray = [];
@@ -134,6 +145,56 @@ function convertArray(dataS, dataDr, dataMn, dataBs, dataSp, dataWc, dataCr) {
 }
 
 function display() {
+    // 頭文字でシナリオ一覧
+    let scenario_a = "<ul>";
+    let scenario_k = "<ul>";
+    let scenario_s = "<ul>";
+    let scenario_t = "<ul>";
+    let scenario_n = "<ul>";
+    let scenario_h = "<ul>";
+    let scenario_m = "<ul>";
+    let scenario_y = "<ul>";
+    let scenario_r = "<ul>";
+    let scenario_w = "<ul>";
+    for (let i = 1; i < sArray.length; i++) {
+        let name = sArray[i][1];
+        let link = sArray[i][2];
+        let kasira = sArray[i][3];
+        
+        if (kasira.indexOf("あ") || kasira.indexOf("い") || kasira.indexOf("う") || kasira.indexOf("え") || kasira.indexOf("お")) {
+            scenario_a += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
+        } else if (kasira.indexOf("か") || kasira.indexOf("き") || kasira.indexOf("く") || kasira.indexOf("け") || kasira.indexOf("こ")) {
+            scenario_k += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
+        } else if (kasira.indexOf("さ") || kasira.indexOf("し") || kasira.indexOf("す") || kasira.indexOf("せ") || kasira.indexOf("そ")) {
+            scenario_s += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
+        } else if (kasira.indexOf("た") || kasira.indexOf("ち") || kasira.indexOf("つ") || kasira.indexOf("て") || kasira.indexOf("と")) {
+            scenario_t += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
+        } else if (kasira.indexOf("な") || kasira.indexOf("に") || kasira.indexOf("ぬ") || kasira.indexOf("ね") || kasira.indexOf("の")) {
+            scenario_n += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
+        } else if (kasira.indexOf("は") || kasira.indexOf("ひ") || kasira.indexOf("ふ") || kasira.indexOf("へ") || kasira.indexOf("ほ")) {
+            scenario_h += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
+        } else if (kasira.indexOf("ま") || kasira.indexOf("み") || kasira.indexOf("む") || kasira.indexOf("め") || kasira.indexOf("も")) {
+            scenario_m += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
+        } else if (kasira.indexOf("や") || kasira.indexOf("ゆ") || kasira.indexOf("よ")) {
+            scenario_y += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
+        } else if (kasira.indexOf("ら") || kasira.indexOf("り") || kasira.indexOf("る") || kasira.indexOf("れ") || kasira.indexOf("ろ")) {
+            scenario_r += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
+        } else if (kasira.indexOf("わ") || kasira.indexOf("を") || kasira.indexOf("ん")) {
+            scenario_w += '<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
+        }
+    }
+    aElement.innerHTML = scenario_a + "</ul>";
+    kElement.innerHTML = scenario_k + "</ul>";
+    sElement.innerHTML = scenario_s + "</ul>";
+    tElement.innerHTML = scenario_t + "</ul>";
+    nElement.innerHTML = scenario_n + "</ul>";
+    hElement.innerHTML = scenario_h + "</ul>";
+    mElement.innerHTML = scenario_m + "</ul>";
+    yElement.innerHTML = scenario_y + "</ul>";
+    rElement.innerHTML = scenario_r + "</ul>";
+    wElement.innerHTML = scenario_w + "</ul>";   
+    
+    
     // シナリオ一覧
     
     let scenario = "<ul>";
