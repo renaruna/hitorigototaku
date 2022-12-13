@@ -169,6 +169,17 @@ header {
     margin: 0 auto;
 }
 
+.kasira-lists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.kasira-list {
+    width: 330px;
+}
+
 .chara {
   border: 1px solid #fffff0;
   border-radius: 40px;
