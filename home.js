@@ -4,7 +4,7 @@ const bossElement = document.getElementById('i2b-list');
 const spiritualElement = document.getElementById('i2s-list');
 const warcrimElement = document.getElementById('i2w-list');
 const creatorElement = document.getElementById('i2c-list');
-const scenarioElement = document.getElementById('scenario-list');
+
 const aElement = document.getElementById('i1-a-list');
 const kElement = document.getElementById('i1-k-list');
 const sElement = document.getElementById('i1-s-list');
@@ -195,16 +195,7 @@ function display() {
     wElement.innerHTML = scenario_w + "</ul>";   
     
     
-    // シナリオ一覧
-    
-    let scenario = "<ul>";
-    for (let i = 1; i < sArray.length; i++) {
-        let link = sArray[i][2];
-        let name = sArray[i][1];
-        scenario +='<li><a href="'+link+'">'+change(name,"#",",")+'</a></li>';
-    }
-    scenarioElement.innerHTML = scenario + "</ul>";
-    
+       
     
     // キャラクター一覧
 
