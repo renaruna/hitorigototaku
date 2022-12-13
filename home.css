@@ -161,6 +161,14 @@ header {
     margin: 15px;
 }
 
+.short-btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /*折り返しあり*/
+    justify-content: flex-start; /*左詰め*/
+    margin: 0 auto;
+}
+
 .chara {
   border: 1px solid #fffff0;
   border-radius: 40px;
