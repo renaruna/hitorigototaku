@@ -80,7 +80,7 @@ header {
     padding-top: 15px;
 }
 
-.li2 li{
+.menu-li2 li{
     margin-left: 45px;
     font-size: 0.95em;
     list-style: disc;
@@ -109,7 +109,7 @@ header {
 /*--------- メニュー ---------*/
 
 /*--------- ホーム ---------*/
-/* 上 */
+/*-----上----- */
 .topper {
     padding: 25px 100px;
 }
@@ -135,8 +135,9 @@ header {
 .li1 {
     padding-top: 10px;
 }
+/*-----上----- */
 
-/* 中 */
+/*-----一覧たち----- */
 .lists {
     padding: 0 100px;
 }
@@ -154,7 +155,10 @@ header {
     padding-bottom: 15px;
     margin: 15px;
 }
+/*-----一覧たち----- */
 
+/*-----シナリオ一覧-----*/
+/*ボタン*/
 .short-btn {
     display: flex;
     flex-direction: row;
@@ -206,6 +210,7 @@ header {
   margin: 0;
 }
 
+/*シナリオリスト*/
 .kasira-lists {
     display: flex;
     flex-direction: row;
@@ -224,6 +229,23 @@ header {
     font-size: 18px;
 }
 
+.pl-lists {
+    display: none;
+}
+
+/*-----シナリオ一覧-----*/
+
+/*-----画像付きflex-----*/
+.mems{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /*折り返しあり*/
+  justify-content: flex-start; /*左詰め*/
+  margin: 0 auto;
+}
+/*-----画像付きflex-----*/
+
+/*-----キャラクター一覧-----*/
 .chara {
   border: 1px solid #fffff0;
   border-radius: 40px;
@@ -260,15 +282,9 @@ header {
     margin: 0;
     font-size: 15px;
 }
+/*-----キャラクター一覧-----*/
 
-.mems{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; /*折り返しあり*/
-  justify-content: flex-start; /*左詰め*/
-  margin: 0 auto;
-}
-
+/*-----メンバー一覧-----*/
 .mem {
   width: 120px;
   text-align: center;
@@ -299,8 +315,9 @@ header {
 .mem a:hover {
   text-decoration: none;
 }
-
+/*-----メンバー一覧-----*/
 /*--------- ホーム ---------*/
+
 
 /*--------- キャラ、シナリオ、メンバー共通 ---------*/
 /* タイトル */
