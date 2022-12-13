@@ -145,12 +145,6 @@ header {
     padding: 30px 0;
 }
 
-.list a {
-    color: #555;
-    padding-bottom: 20px;
-    font-size: 18px;
-}
-
 .list a:hover {
     color: #B0B0FF;
 }
@@ -167,6 +161,49 @@ header {
     flex-wrap: wrap; /*折り返しあり*/
     justify-content: flex-start; /*左詰め*/
     margin: 0 auto;
+    align-items: flex-end;
+}
+
+.short-btn a {
+    text-decoration: none;
+}
+
+.btn {
+    border: 5px solid #F9F4DF;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background-color: #F9F4DF;
+}
+
+.btn p {
+  background-color: transparent;
+  margin: 0;
+  transition: .3s;
+}
+
+.btn:hover p {
+  transform: scale(1.2);
+}
+
+.kasira-btn a{
+  width: 56px;
+  margin: 10px;
+}
+
+.pl-btn a {
+  width: 80px;
+  margin: 10px;
+}
+
+.kome {
+  padding: 5px;
+  margin: 0;
 }
 
 .kasira-lists {
@@ -176,8 +213,15 @@ header {
     justify-content: space-between;
     margin: 0 auto;
 }
+
 .kasira-list {
     width: 330px;
+}
+
+.kasira-list a {
+    color: #555;
+    padding-bottom: 20px;
+    font-size: 18px;
 }
 
 .chara {
