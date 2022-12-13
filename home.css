@@ -143,6 +143,10 @@ header {
 .li1 {
     padding-top: 10px;
 }
+
+.sce-list li {
+    display: inline-block;
+}
 /*-----上----- */
 
 /*-----一覧たち----- */
