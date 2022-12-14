@@ -67,7 +67,7 @@ function display() {
             if (cArray[j][3]) {
                 cPL = '<a class="cPL" href="../'+cArray[j][1]+'"><img src="../transparent.png"><p>'+sArray[i][7]+'</p></a>';
             } else {
-                cPL = '<a class="cPL" href="../'+cArray[j][1]+'"><img src="../character/manager/'+cArray[j][2]+'.png"><p>'+sArray[i][7]+'</p></a>';
+                cPL = '<a href="../'+cArray[j][1]+'"><div class="cPL"><img src="../character/manager/'+cArray[j][2]+'.png"><p>'+sArray[i][7]+'</p></div></a>';
             }
             htmlPL += '<div class="htmlPL">'+sPL+cPL+'</div>';
         }
