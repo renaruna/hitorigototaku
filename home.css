@@ -85,7 +85,9 @@ header {
 }
 
 .menu-li1 li {
-  display: inline-block;
+    display: inline-block;
+    padding-left: 12px;
+    padding-top: 5px;
 }
 
 .menu-li2 li{
@@ -146,6 +148,7 @@ header {
 
 .sce-list li {
     display: inline-block;
+    padding-right: 10px;
 }
 /*-----上----- */
 
