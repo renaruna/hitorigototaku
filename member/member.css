@@ -44,7 +44,7 @@
     padding: 0 4px;
     border: 2px solid #E6DAAF;
     border-radius: 15px;
-    /**/
+    /*--水平方向 垂直方向 影のぼかし 拡大 色--*/
     box-shadow: 2px 2px 2px #E6DAAF;
 }
 
