@@ -85,5 +85,13 @@
 .cPL:hover img {
     transform: scale(1.1);
 }
+
+.no-image {
+    height: 115px;
+}
+
+.no-image p {
+    padding: 42px 0;
+}
 /*--------- メンバー ---------*/
 
