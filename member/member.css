@@ -36,12 +36,16 @@
 }
 
 .htmlPL {
-    width: 200px;
+    width: 210px;
     margin: 10px;
 }
 
+.sPL {
+    transition: .3s;
+}
+
 .sPL h4 {
-    padding: 0 4px;
+    padding: 5px;
     border: 2px solid #E6DAAF;
     border-radius: 15px;
     /*--水平方向 垂直方向 影のぼかし 拡大 色--*/
@@ -49,25 +53,39 @@
 }
 
 .sPL:hover h4 {
+    transform: scale(1.2);
     color: #888;
-    background-color: #E6DAAF;
+    background-color: #FAF3D7;
+}
+
+.sPL:hover a{
     text-decoration: none;
 }
 
 .cPL {
-    width: 150px;
+    width: 180px;
     border: 1px solid #E6DAAF;
     border-radius: 5px;
     box-shadow: 2px 2px 3px #E6DAAF;
-    margin 0 auto;
+    margin: 0 auto;
+    transition: .3s;
+}
+
+.cPL:hover {
+    background-color: #FAF3D7;
 }
 
 .cPL:hover p {
-    color: #E6DAAF;
+    transform: scale(1.1);
+}
+
+.cPL:hover a{
+    text-decoration: none;
 }
 
 .cPL img {
-    height: 70px;
+    padding-top: 5px;
+    height: 80px;
 }
 
 /*--------- メンバー ---------*/
