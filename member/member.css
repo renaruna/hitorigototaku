@@ -42,13 +42,28 @@
 
 .sPL h4 {
     padding: 0 4px;
-    border: 2px solid #fffff0;
+    border: 2px solid #E6DAAF;
     border-radius: 15px;
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    /**/
+    box-shadow: 2px 2px 2px #E6DAAF;
 }
 
 .sPL:hover h4 {
-    color: #B0B0FF;
+    color: #888;
+    background-color: #E6DAAF;
+    text-decoration: none;
+}
+
+.cPL {
+    width: 150px;
+    border: 1px solid #E6DAAF;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #E6DAAF;
+    margin 0 auto;
+}
+
+.cPL:hover p {
+    color: #E6DAAF;
 }
 
 .cPL img {
