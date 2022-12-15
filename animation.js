@@ -23,6 +23,12 @@ $(function() {
         $home.animate({'marginRight':0},500);
     });
     
+    $home.click(function() {
+        $('.back').fadeToggle(250);//250ミリ秒で非表示
+        $('.front').fadeToggle(250);//250ミリ秒で表示
+        $home.animate({'marginRight':0},500);
+    });
+    
     //ページ内リンクへスクロール
     $('a[href*="#"]').click(function() { //全てのページ内リンクに適用させたい場合はa[href*="#"]のみでもOK。元は#page-link a[href*="#"]。
         var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
