@@ -17,7 +17,29 @@ $(function() {
         }
     });
     
+    //アイコンを押しても戻る
+    $('.back').click(function() {
+        $('.back').fadeToggle(250);//250ミリ秒で非表示
+        $('.front').fadeToggle(250);//250ミリ秒で表示
+        $home.animate({'marginRight':0},500);
+    });
+    
+    //メニューを押しても戻る
     $home.click(function() {
+        $('.back').fadeToggle(250);//250ミリ秒で非表示
+        $('.front').fadeToggle(250);//250ミリ秒で表示
+        $home.animate({'marginRight':0},500);
+    });
+    
+    //元のページを押しても戻る
+    $('.lists').click(function() {
+        $('.back').fadeToggle(250);//250ミリ秒で非表示
+        $('.front').fadeToggle(250);//250ミリ秒で表示
+        $home.animate({'marginRight':0},500);
+    });
+    
+    //メニューのリンクを押しても戻る
+    $('.menu a[href*="#"]').click(function() {
         $('.back').fadeToggle(250);//250ミリ秒で非表示
         $('.front').fadeToggle(250);//250ミリ秒で表示
         $home.animate({'marginRight':0},500);
