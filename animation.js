@@ -33,8 +33,8 @@ $(function() {
     
     //元のページを押しても戻る
     $('.lists').click(function() {
-        $('.back').fadeToggle(250);//250ミリ秒で非表示
-        $('.front').fadeToggle(250);//250ミリ秒で表示
+        $('.back').fadeOut(250);//250ミリ秒で非表示
+        $('.front').fadeIn(250);//250ミリ秒で表示
         $home.animate({'marginRight':0},500);
     });
     
