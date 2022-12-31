@@ -65,9 +65,15 @@ function display() {
             let icon = cArray[j][3];
                         
             sPL = '<a class="sPL" href="../scenario/'+sArray[i][12]+'"><h4>'+change(sArray[i][1], "#", ",")+'</h4></a>';
-            if (icon.indexOf("no") == 0) {
+            
+            if (j == 0) {
+                // 探索者じゃない。
+                cPL = '<a href="manager.html"><div class="cPL no-image"><p>'+sArray[i][7]+'</p></div></a>';
+            } else if (icon.indexOf("no") == 0) {
+                // 探索者ではあるけど画像はない。
                 cPL = '<a href="../'+cArray[j][1]+'"><div class="cPL no-image"><p>'+sArray[i][7]+'</p></div></a>';
             } else {
+                // 画像のある探索者。
                 cPL = '<a href="../'+cArray[j][1]+'"><div class="cPL"><img src="'+icon+'"><p>'+sArray[i][7]+'</p></div></a>';
             }
             htmlPL += '<div class="htmlPL">'+sPL+cPL+'</div>';
@@ -93,6 +99,7 @@ function search(chara) {
             return j;
         }
     }
+    //探索者欄に載っていない子もいる。NPCとかマダミスとか。
     return 0;
 }
 
