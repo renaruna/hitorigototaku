@@ -62,12 +62,13 @@ function display() {
             let sPL = "";
             let cPL = "";
             let j = search(sArray[i][7]);
+            let icon = cArray[j][3];
                         
             sPL = '<a class="sPL" href="../scenario/'+sArray[i][12]+'"><h4>'+change(sArray[i][1], "#", ",")+'</h4></a>';
-            if (cArray[j][3]) {
+            if (icon.indexOf("no") == 0) {
                 cPL = '<a href="../'+cArray[j][1]+'"><div class="cPL no-image"><p>'+sArray[i][7]+'</p></div></a>';
             } else {
-                cPL = '<a href="../'+cArray[j][1]+'"><div class="cPL"><img src="../character/manager/'+cArray[j][2]+'.png"><p>'+sArray[i][7]+'</p></div></a>';
+                cPL = '<a href="../'+cArray[j][1]+'"><div class="cPL"><img src="'+icon+'"><p>'+sArray[i][7]+'</p></div></a>';
             }
             htmlPL += '<div class="htmlPL">'+sPL+cPL+'</div>';
         }
